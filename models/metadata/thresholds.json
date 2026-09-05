@@ -1,0 +1,44 @@
+{
+    "schema_version": "1.0.0",
+    "model_thresholds": {
+        "default": 0.35,
+        "benign_max": 0.35,
+        "malicious_min": 0.35
+    },
+    "risk_thresholds": {
+        "low_max": 0.34,
+        "review_min": 0.35,
+        "high_risk_min": 0.70,
+        "critical_min": 0.90
+    },
+    "decision_thresholds": {
+        "allow_below": 0.35,
+        "review_from": 0.35,
+        "high_risk_from": 0.70,
+        "reject_from": 0.90
+    },
+    "cdr_thresholds": {
+        "sanitize_from": 0.35,
+        "review_from": 0.70,
+        "reject_from": 0.90
+    },
+    "calibration": {
+        "method": "validation_based",
+        "calibrated": false,
+        "required_for_production": true
+    },
+    "selection": {
+        "method": "validation_optimized",
+        "objective": "balanced_accuracy",
+        "secondary_objective": "malicious_recall",
+        "false_negative_priority": "high",
+        "validation_required": true
+    },
+    "metadata": {
+        "model_type": "random_forest",
+        "target_name": "malicious",
+        "probability_class": 1,
+        "threshold_source": "security_conservative_default",
+        "notes": "Conservative initial thresholds for defensive document malware detection. Final production thresholds must be selected from a representative validation set and recorded with evaluation metrics and dataset fingerprints."
+    }
+}

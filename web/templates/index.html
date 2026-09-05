@@ -1,0 +1,338 @@
+{% extends "base.html" %}
+
+{% block title %}Pharos CDR — Dashboard{% endblock %}
+
+{% block content %}
+
+<section class="hero-section">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                DOCUMENT SECURITY PLATFORM
+            </div>
+
+            <h1>
+                Analyze.
+                <span class="text-accent">Disarm.</span>
+                Reconstruct.
+            </h1>
+
+            <p class="hero-description">
+                Pharos CDR performs static document analysis, malware
+                capability detection, machine-learning classification,
+                and Content Disarm &amp; Reconstruction without executing
+                the submitted document.
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="{{ url_for('scan_page') }}"
+                    class="button button-primary button-large"
+                >
+                    Scan a Document
+                </a>
+
+                <a
+                    href="#how-it-works"
+                    class="button button-secondary button-large"
+                >
+                    How It Works
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="security-banner">
+
+    <div class="container">
+
+        <div class="security-banner-inner">
+
+            <div class="security-icon" aria-hidden="true">
+                ✓
+            </div>
+
+            <div>
+                <strong>Static-first security architecture</strong>
+
+                <p>
+                    Uploaded documents are analyzed as data. Pharos does
+                    not execute macros, scripts, embedded executables,
+                    or document applications during analysis.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section
+    id="how-it-works"
+    class="section"
+>
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                ANALYSIS PIPELINE
+            </div>
+
+            <h2>
+                From suspicious document to safe output
+            </h2>
+
+            <p>
+                Every scan passes through multiple defensive analysis
+                stages before a final disposition is produced.
+            </p>
+
+        </div>
+
+
+        <div class="pipeline-grid">
+
+            <article class="pipeline-card">
+
+                <div class="pipeline-number">
+                    01
+                </div>
+
+                <h3>Ingestion</h3>
+
+                <p>
+                    Validate the submitted file, identify its type,
+                    enforce resource limits, and establish a safe
+                    analysis boundary.
+                </p>
+
+            </article>
+
+
+            <article class="pipeline-card">
+
+                <div class="pipeline-number">
+                    02
+                </div>
+
+                <h3>Extraction</h3>
+
+                <p>
+                    Inspect document structure, relationships, macros,
+                    scripts, URLs, embedded objects, payload indicators,
+                    and behavioral capabilities.
+                </p>
+
+            </article>
+
+
+            <article class="pipeline-card">
+
+                <div class="pipeline-number">
+                    03
+                </div>
+
+                <h3>Detection</h3>
+
+                <p>
+                    Combine extracted security features with machine
+                    learning and rule-based analysis to estimate risk.
+                </p>
+
+            </article>
+
+
+            <article class="pipeline-card">
+
+                <div class="pipeline-number">
+                    04
+                </div>
+
+                <h3>CDR</h3>
+
+                <p>
+                    Remove or sanitize active and unsafe document content
+                    and reconstruct a safer document when policy permits.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section section-muted">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="eyebrow">
+                CAPABILITIES
+            </div>
+
+            <h2>
+                Built for document threat analysis
+            </h2>
+
+        </div>
+
+
+        <div class="capability-grid">
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    M
+                </div>
+
+                <h3>Macro Analysis</h3>
+
+                <p>
+                    Detect VBA and XLM activity, execution capabilities,
+                    suspicious APIs, obfuscation, and macro-driven chains.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    S
+                </div>
+
+                <h3>Script Analysis</h3>
+
+                <p>
+                    Analyze PowerShell, JavaScript, VBScript, shell,
+                    and command-interpreter indicators without execution.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    P
+                </div>
+
+                <h3>Payload Detection</h3>
+
+                <p>
+                    Identify encoded, compressed, embedded, executable,
+                    staged, and in-memory payload indicators.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    C
+                </div>
+
+                <h3>Content Disarm</h3>
+
+                <p>
+                    Apply CDR policy to remove active content and
+                    reconstruct safer Office documents.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    ML
+                </div>
+
+                <h3>Machine Learning</h3>
+
+                <p>
+                    Produce a model-based risk probability using the
+                    project's trained feature schema and classifier.
+                </p>
+
+            </article>
+
+
+            <article class="capability-card">
+
+                <div class="capability-icon">
+                    R
+                </div>
+
+                <h3>Security Reports</h3>
+
+                <p>
+                    Generate structured findings, decisions, integrity
+                    information, and analyst-friendly reports.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <div>
+
+                <div class="eyebrow">
+                    READY TO ANALYZE
+                </div>
+
+                <h2>
+                    Submit a document for analysis
+                </h2>
+
+                <p>
+                    Start a static security scan and inspect the resulting
+                    detection and CDR decision.
+                </p>
+
+            </div>
+
+            <a
+                href="{{ url_for('scan_page') }}"
+                class="button button-primary"
+            >
+                Start Scan
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

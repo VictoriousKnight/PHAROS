@@ -1,0 +1,472 @@
+{% extends "base.html" %}
+
+{% block title %}Pharos CDR — Scan Document{% endblock %}
+
+{% block content %}
+
+<section class="page-header">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            DOCUMENT SCANNER
+        </div>
+
+        <h1>
+            Scan a document
+        </h1>
+
+        <p>
+            Upload a document for static malware analysis and CDR
+            processing. The submitted content is treated as untrusted data.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container scan-container">
+
+        <form
+            id="scan-form"
+            class="scan-form"
+            method="post"
+            action="{{ url_for('scan_upload') }}"
+            enctype="multipart/form-data"
+            novalidate
+        >
+
+            <div
+                id="drop-zone"
+                class="drop-zone"
+                tabindex="0"
+                role="button"
+                aria-label="Choose a document to scan"
+            >
+
+                <input
+                    id="file-input"
+                    name="file"
+                    type="file"
+                    class="file-input"
+                    autocomplete="off"
+                    required
+                >
+
+                <div class="drop-zone-icon" aria-hidden="true">
+                    ↑
+                </div>
+
+                <h2>
+                    Drop your document here
+                </h2>
+
+                <p>
+                    or choose a file from your device
+                </p>
+
+                <span class="button button-secondary">
+                    Choose File
+                </span>
+
+                <div
+                    id="selected-file"
+                    class="selected-file"
+                    aria-live="polite"
+                >
+                    No file selected
+                </div>
+
+            </div>
+
+
+            <div class="upload-notice">
+
+                <div class="notice-icon" aria-hidden="true">
+                    i
+                </div>
+
+                <div>
+
+                    <strong>
+                        Security notice
+                    </strong>
+
+                    <p>
+                        Only submit documents that you are authorized to
+                        analyze. Pharos performs static analysis and does
+                        not intentionally execute document content.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="scan-options">
+
+                <div class="scan-option">
+
+                    <div>
+
+                        <strong>
+                            Analyze
+                        </strong>
+
+                        <span>
+                            Extract security features and evaluate risk.
+                        </span>
+
+                    </div>
+
+                    <span class="option-status">
+                        Enabled
+                    </span>
+
+                </div>
+
+
+                <div class="scan-option">
+
+                    <div>
+
+                        <strong>
+                            CDR Sanitization
+                        </strong>
+
+                        <span>
+                            Apply the configured CDR policy when required.
+                        </span>
+
+                    </div>
+
+                    <span class="option-status">
+                        Enabled
+                    </span>
+
+                </div>
+
+
+                <div class="scan-option">
+
+                    <div>
+
+                        <strong>
+                            Security Report
+                        </strong>
+
+                        <span>
+                            Generate a structured report for the scan.
+                        </span>
+
+                    </div>
+
+                    <span class="option-status">
+                        Enabled
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="scan-error"
+                class="form-error"
+                role="alert"
+                aria-live="assertive"
+                hidden
+            ></div>
+
+
+            <div class="scan-submit">
+
+                <button
+                    id="scan-button"
+                    type="submit"
+                    class="button button-primary button-large"
+                >
+                    <span
+                        id="scan-button-label"
+                    >
+                        Analyze Document
+                    </span>
+
+                    <span
+                        id="scan-spinner"
+                        class="spinner"
+                        aria-hidden="true"
+                        hidden
+                    ></span>
+                </button>
+
+            </div>
+
+        </form>
+
+
+        <div class="supported-formats">
+
+            <h3>
+                Supported analysis targets
+            </h3>
+
+            <div class="format-list">
+
+                <span class="format-badge">
+                    DOCX
+                </span>
+
+                <span class="format-badge">
+                    DOCM
+                </span>
+
+                <span class="format-badge">
+                    DOTX
+                </span>
+
+                <span class="format-badge">
+                    DOTM
+                </span>
+
+                <span class="format-badge">
+                    XLSX
+                </span>
+
+                <span class="format-badge">
+                    XLSM
+                </span>
+
+                <span class="format-badge">
+                    PPTX
+                </span>
+
+                <span class="format-badge">
+                    PPTM
+                </span>
+
+                <span class="format-badge">
+                    PDF
+                </span>
+
+                <span class="format-badge">
+                    RTF
+                </span>
+
+                <span class="format-badge">
+                    Scripts
+                </span>
+
+                <span class="format-badge">
+                    Archives
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="analysis-boundary">
+
+            <h3>
+                What happens during analysis?
+            </h3>
+
+            <ol>
+
+                <li>
+                    The upload is validated and bounded.
+                </li>
+
+                <li>
+                    File type and document structure are identified.
+                </li>
+
+                <li>
+                    Security-relevant features are extracted.
+                </li>
+
+                <li>
+                    Detection and ML analysis are performed.
+                </li>
+
+                <li>
+                    CDR policy determines whether content should be
+                    preserved, sanitized, removed, reviewed, or rejected.
+                </li>
+
+                <li>
+                    A report and, where applicable, sanitized output are
+                    generated.
+                </li>
+
+            </ol>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+(function () {
+    "use strict";
+
+    const form = document.getElementById("scan-form");
+    const input = document.getElementById("file-input");
+    const dropZone = document.getElementById("drop-zone");
+    const selectedFile = document.getElementById("selected-file");
+    const errorBox = document.getElementById("scan-error");
+    const scanButton = document.getElementById("scan-button");
+    const scanButtonLabel = document.getElementById("scan-button-label");
+    const spinner = document.getElementById("scan-spinner");
+
+    if (!form || !input || !dropZone) {
+        return;
+    }
+
+    function showFile(file) {
+        if (!file) {
+            selectedFile.textContent = "No file selected";
+            selectedFile.classList.remove("has-file");
+            return;
+        }
+
+        selectedFile.textContent =
+            file.name + " (" + formatBytes(file.size) + ")";
+
+        selectedFile.classList.add("has-file");
+    }
+
+    function formatBytes(bytes) {
+        if (!Number.isFinite(bytes) || bytes < 0) {
+            return "unknown size";
+        }
+
+        if (bytes < 1024) {
+            return bytes + " B";
+        }
+
+        if (bytes < 1024 * 1024) {
+            return (bytes / 1024).toFixed(1) + " KB";
+        }
+
+        if (bytes < 1024 * 1024 * 1024) {
+            return (bytes / (1024 * 1024)).toFixed(1) + " MB";
+        }
+
+        return (bytes / (1024 * 1024 * 1024)).toFixed(1) + " GB";
+    }
+
+    function showError(message) {
+        errorBox.textContent = message;
+        errorBox.hidden = false;
+    }
+
+    function clearError() {
+        errorBox.textContent = "";
+        errorBox.hidden = true;
+    }
+
+    function setSubmitting(submitting) {
+        scanButton.disabled = submitting;
+        spinner.hidden = !submitting;
+
+        if (submitting) {
+            scanButtonLabel.textContent = "Analyzing…";
+        } else {
+            scanButtonLabel.textContent = "Analyze Document";
+        }
+    }
+
+    input.addEventListener("change", function () {
+        clearError();
+        showFile(input.files && input.files.length
+            ? input.files[0]
+            : null
+        );
+    });
+
+    dropZone.addEventListener("click", function (event) {
+        if (event.target === input) {
+            return;
+        }
+
+        input.click();
+    });
+
+    dropZone.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            input.click();
+        }
+    });
+
+    ["dragenter", "dragover"].forEach(function (eventName) {
+        dropZone.addEventListener(eventName, function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            dropZone.classList.add("drag-active");
+        });
+    });
+
+    ["dragleave", "drop"].forEach(function (eventName) {
+        dropZone.addEventListener(eventName, function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+            dropZone.classList.remove("drag-active");
+        });
+    });
+
+    dropZone.addEventListener("drop", function (event) {
+        const files = event.dataTransfer.files;
+
+        if (!files || !files.length) {
+            return;
+        }
+
+        input.files = files;
+        showFile(files[0]);
+        clearError();
+    });
+
+    form.addEventListener("submit", function (event) {
+        clearError();
+
+        if (!input.files || !input.files.length) {
+            event.preventDefault();
+
+            showError(
+                "Please choose a document before starting the scan."
+            );
+
+            return;
+        }
+
+        const file = input.files[0];
+
+        if (!file || file.size <= 0) {
+            event.preventDefault();
+
+            showError(
+                "The selected file is empty or could not be read."
+            );
+
+            return;
+        }
+
+        setSubmitting(true);
+    });
+
+})();
+</script>
+
+{% endblock %}

@@ -1,0 +1,780 @@
+{% extends "base.html" %}
+
+{% block title %}Pharos CDR — Scan Result{% endblock %}
+
+{% block content %}
+
+{% set scan = result if result is defined else {} %}
+
+{% set verdict = scan.get("verdict", scan.get("status", "unknown")) %}
+{% set verdict_lower = verdict|string|lower %}
+
+{% set probability = scan.get(
+    "model_probability",
+    scan.get("probability")
+) %}
+
+{% set disposition = scan.get(
+    "cdr_disposition",
+    scan.get(
+        "disposition",
+        scan.get("action", "unknown")
+    )
+) %}
+
+{% set findings = scan.get(
+    "findings",
+    scan.get("detector_findings", [])
+) %}
+
+{% set stages = scan.get(
+    "stages",
+    []
+) %}
+
+{% set scan_id = scan.get(
+    "scan_id",
+    scan.get("id", "")
+) %}
+
+{% set filename = scan.get(
+    "filename",
+    scan.get("name", "Submitted document")
+) %}
+
+{% set sha256 = scan.get(
+    "sha256",
+    scan.get("file_sha256", "")
+) %}
+
+
+<section class="page-header">
+
+    <div class="container">
+
+        <div class="eyebrow">
+            SCAN RESULT
+        </div>
+
+        <h1>
+            Analysis complete
+        </h1>
+
+        <p>
+            Security analysis and CDR processing results for
+            <strong>{{ filename }}</strong>.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container">
+
+
+        <div class="result-summary">
+
+            <div class="result-verdict">
+
+                <div class="result-label">
+                    FINAL VERDICT
+                </div>
+
+                <div
+                    class="verdict-badge verdict-{{ verdict_lower|replace(' ', '-') }}"
+                >
+                    {{ verdict|string|upper }}
+                </div>
+
+                {% if scan.get("confidence") is not none %}
+
+                <div class="result-confidence">
+                    Confidence:
+                    <strong>
+                        {{ scan.get("confidence") }}
+                    </strong>
+                </div>
+
+                {% endif %}
+
+            </div>
+
+
+            <div class="result-metric">
+
+                <div class="result-label">
+                    ML RISK PROBABILITY
+                </div>
+
+                <div class="metric-value">
+
+                    {% if probability is not none %}
+
+                        {% if probability is number %}
+                            {{ "%.1f"|format(probability * 100 if probability <= 1 else probability) }}%
+                        {% else %}
+                            {{ probability }}
+                        {% endif %}
+
+                    {% else %}
+
+                        N/A
+
+                    {% endif %}
+
+                </div>
+
+            </div>
+
+
+            <div class="result-metric">
+
+                <div class="result-label">
+                    CDR DISPOSITION
+                </div>
+
+                <div
+                    class="disposition-badge disposition-{{ disposition|string|lower|replace(' ', '-') }}"
+                >
+                    {{ disposition|string|upper }}
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="result-actions">
+
+            {% if scan_id %}
+
+            <a
+                href="{{ url_for('api_report', scan_id=scan_id) }}"
+                class="button button-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View JSON Report
+            </a>
+
+            <a
+                href="{{ url_for('api_html_report', scan_id=scan_id) }}"
+                class="button button-secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View HTML Report
+            </a>
+
+            {% if scan.get("sanitized_available", scan.get("sanitized_changed", false)) %}
+
+            <a
+                href="{{ url_for('api_sanitized', scan_id=scan_id) }}"
+                class="button button-primary"
+            >
+                Download Sanitized File
+            </a>
+
+            {% endif %}
+
+            {% endif %}
+
+            <a
+                href="{{ url_for('scan_page') }}"
+                class="button button-secondary"
+            >
+                Scan Another File
+            </a>
+
+        </div>
+
+
+        <div class="result-grid">
+
+
+            <section class="result-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <div class="eyebrow">
+                            DOCUMENT
+                        </div>
+
+                        <h2>
+                            File Information
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <dl class="metadata-list">
+
+                    <div class="metadata-row">
+
+                        <dt>
+                            Filename
+                        </dt>
+
+                        <dd>
+                            {{ filename }}
+                        </dd>
+
+                    </div>
+
+
+                    {% if scan.get("file_type") %}
+
+                    <div class="metadata-row">
+
+                        <dt>
+                            File Type
+                        </dt>
+
+                        <dd>
+                            {{ scan.get("file_type") }}
+                        </dd>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    {% if scan.get("mime_type") %}
+
+                    <div class="metadata-row">
+
+                        <dt>
+                            MIME Type
+                        </dt>
+
+                        <dd>
+                            {{ scan.get("mime_type") }}
+                        </dd>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    {% if scan.get("size") is not none %}
+
+                    <div class="metadata-row">
+
+                        <dt>
+                            Size
+                        </dt>
+
+                        <dd>
+                            {{ scan.get("size") }}
+                            {% if scan.get("size_unit") %}
+                                {{ scan.get("size_unit") }}
+                            {% endif %}
+                        </dd>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    {% if sha256 %}
+
+                    <div class="metadata-row metadata-row-stack">
+
+                        <dt>
+                            SHA-256
+                        </dt>
+
+                        <dd class="hash-value">
+                            {{ sha256 }}
+                        </dd>
+
+                    </div>
+
+                    {% endif %}
+
+
+                    {% if scan_id %}
+
+                    <div class="metadata-row">
+
+                        <dt>
+                            Scan ID
+                        </dt>
+
+                        <dd class="monospace">
+                            {{ scan_id }}
+                        </dd>
+
+                    </div>
+
+                    {% endif %}
+
+                </dl>
+
+            </section>
+
+
+            <section class="result-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <div class="eyebrow">
+                            CDR
+                        </div>
+
+                        <h2>
+                            Sanitization
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="cdr-status">
+
+                    {% set sanitized_changed = scan.get(
+                        "sanitized_changed",
+                        scan.get("sanitized", false)
+                    ) %}
+
+                    <div class="cdr-status-icon
+                        {% if sanitized_changed %}
+                            status-warning
+                        {% else %}
+                            status-safe
+                        {% endif %}
+                    ">
+                        {% if sanitized_changed %}
+                            !
+                        {% else %}
+                            ✓
+                        {% endif %}
+                    </div>
+
+
+                    <div>
+
+                        {% if sanitized_changed %}
+
+                        <strong>
+                            Sanitized output generated
+                        </strong>
+
+                        <p>
+                            The CDR pipeline modified the document according
+                            to the active sanitization policy.
+                        </p>
+
+                        {% else %}
+
+                        <strong>
+                            No sanitization change reported
+                        </strong>
+
+                        <p>
+                            The CDR pipeline did not report a modified
+                            output for this scan.
+                        </p>
+
+                        {% endif %}
+
+                    </div>
+
+                </div>
+
+
+                {% if scan.get("sanitization_summary") %}
+
+                <div class="summary-box">
+                    {{ scan.get("sanitization_summary") }}
+                </div>
+
+                {% endif %}
+
+
+                {% if scan.get("sanitization_actions") %}
+
+                <div class="action-list">
+
+                    {% for action in scan.get("sanitization_actions") %}
+
+                    <div class="action-item">
+
+                        <span class="action-name">
+                            {{ action.get("action", "unknown") }}
+                        </span>
+
+                        <span class="action-target">
+                            {{ action.get(
+                                "path",
+                                action.get(
+                                    "target",
+                                    "Document content"
+                                )
+                            ) }}
+                        </span>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+                {% endif %}
+
+            </section>
+
+        </div>
+
+
+        <section class="result-card findings-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        DETECTION
+                    </div>
+
+                    <h2>
+                        Security Findings
+                    </h2>
+
+                </div>
+
+                <div class="finding-count">
+                    {{ findings|length }}
+                    finding{% if findings|length != 1 %}s{% endif %}
+                </div>
+
+            </div>
+
+
+            {% if findings %}
+
+            <div class="findings-list">
+
+                {% for finding in findings %}
+
+                {% if finding is mapping %}
+
+                    {% set severity = finding.get(
+                        "severity",
+                        finding.get("risk", "unknown")
+                    ) %}
+
+                    {% set category = finding.get(
+                        "category",
+                        finding.get("type", "finding")
+                    ) %}
+
+                    {% set message = finding.get(
+                        "message",
+                        finding.get(
+                            "description",
+                            finding.get(
+                                "indicator",
+                                "Security finding detected."
+                            )
+                        )
+                    ) %}
+
+                {% else %}
+
+                    {% set severity = "unknown" %}
+                    {% set category = "finding" %}
+                    {% set message = finding %}
+
+                {% endif %}
+
+
+                <article
+                    class="finding finding-{{ severity|string|lower }}"
+                >
+
+                    <div class="finding-severity">
+                        {{ severity|string|upper }}
+                    </div>
+
+                    <div class="finding-content">
+
+                        <div class="finding-category">
+                            {{ category }}
+                        </div>
+
+                        <p class="finding-message">
+                            {{ message }}
+                        </p>
+
+
+                        {% if finding is mapping %}
+
+                            {% if finding.get("evidence") %}
+
+                            <details class="finding-evidence">
+
+                                <summary>
+                                    Evidence
+                                </summary>
+
+                                <pre>{{ finding.get("evidence") }}</pre>
+
+                            </details>
+
+                            {% endif %}
+
+
+                            {% if finding.get("score") is not none %}
+
+                            <div class="finding-score">
+                                Score:
+                                {{ finding.get("score") }}
+                            </div>
+
+                            {% endif %}
+
+                        {% endif %}
+
+                    </div>
+
+                </article>
+
+                {% endfor %}
+
+            </div>
+
+            {% else %}
+
+            <div class="empty-state">
+
+                <div class="empty-state-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    No findings reported
+                </h3>
+
+                <p>
+                    The analysis pipeline did not return security findings
+                    for this document.
+                </p>
+
+            </div>
+
+            {% endif %}
+
+        </section>
+
+
+        {% if stages %}
+
+        <section class="result-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        PIPELINE
+                    </div>
+
+                    <h2>
+                        Analysis Stages
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="stage-list">
+
+                {% for stage in stages %}
+
+                {% if stage is mapping %}
+
+                    {% set stage_name = stage.get(
+                        "name",
+                        stage.get("stage", "Unknown")
+                    ) %}
+
+                    {% set stage_status = stage.get(
+                        "status",
+                        "unknown"
+                    ) %}
+
+                    {% set stage_message = stage.get(
+                        "message",
+                        stage.get("error", "")
+                    ) %}
+
+                {% else %}
+
+                    {% set stage_name = stage %}
+                    {% set stage_status = "completed" %}
+                    {% set stage_message = "" %}
+
+                {% endif %}
+
+
+                <div class="stage-item">
+
+                    <div
+                        class="stage-indicator stage-{{ stage_status|string|lower }}"
+                    >
+                        {% if stage_status|string|lower in [
+                            "completed",
+                            "success",
+                            "ok"
+                        ] %}
+                            ✓
+                        {% elif stage_status|string|lower in [
+                            "failed",
+                            "error"
+                        ] %}
+                            !
+                        {% else %}
+                            •
+                        {% endif %}
+                    </div>
+
+
+                    <div class="stage-content">
+
+                        <strong>
+                            {{ stage_name }}
+                        </strong>
+
+                        {% if stage_message %}
+
+                        <span>
+                            {{ stage_message }}
+                        </span>
+
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="stage-status">
+                        {{ stage_status|string|upper }}
+                    </div>
+
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+        </section>
+
+        {% endif %}
+
+
+        {% if scan.get("reasons") %}
+
+        <section class="result-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        DECISION
+                    </div>
+
+                    <h2>
+                        Decision Reasons
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <ul class="reason-list">
+
+                {% for reason in scan.get("reasons") %}
+
+                <li>
+                    {{ reason }}
+                </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </section>
+
+        {% endif %}
+
+
+        {% if scan.get("warnings") %}
+
+        <section class="result-card warning-card">
+
+            <div class="card-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        WARNINGS
+                    </div>
+
+                    <h2>
+                        Processing Warnings
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <ul class="reason-list">
+
+                {% for warning in scan.get("warnings") %}
+
+                <li>
+                    {% if warning is mapping %}
+                        {{ warning.get(
+                            "message",
+                            warning.get("description", warning)
+                        ) }}
+                    {% else %}
+                        {{ warning }}
+                    {% endif %}
+                </li>
+
+                {% endfor %}
+
+            </ul>
+
+        </section>
+
+        {% endif %}
+
+
+        <div class="result-footer-actions">
+
+            <a
+                href="{{ url_for('scan_page') }}"
+                class="button button-primary"
+            >
+                Scan Another Document
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

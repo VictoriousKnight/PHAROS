@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+
+# Data
+data/raw/*
+data/processed/*
+data/samples/*
+!data/raw/benign/
+!data/raw/malicious/
+!data/samples/benign/
+!data/samples/suspicious/
+
+# Generated outputs
+outputs/sanitized/*
+outputs/reports/*
+outputs/plots/*
+
+# Trained models
+models/trained/*
+!models/trained/.gitkeep
