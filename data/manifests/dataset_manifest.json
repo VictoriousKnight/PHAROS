@@ -13,27 +13,27 @@
     "fail_fast": false,
     "include_paths_in_records": false,
     "include_unsupported": false,
-    "input_root": "D:\\Projects\\GitHub Directory\\pharos-cdr\\data\\raw",
+    "input_root": "D:\\Projects\\GitHub Directory\\PHAROS\\data\\raw",
     "log_every": 100,
-    "manifest_path": "D:\\Projects\\GitHub Directory\\pharos-cdr\\data\\manifests\\dataset_manifest.json",
+    "manifest_path": "D:\\Projects\\GitHub Directory\\PHAROS\\data\\manifests\\dataset_manifest.json",
     "max_errors": 1000,
     "max_file_size": 104857600,
     "max_files": 100000,
-    "output_path": "D:\\Projects\\GitHub Directory\\pharos-cdr\\data\\processed\\dataset.csv",
+    "output_path": "D:\\Projects\\GitHub Directory\\PHAROS\\data\\processed\\dataset.csv",
     "preserve_sample_metadata": true,
     "recursive": true,
-    "schema_path": "D:\\Projects\\GitHub Directory\\pharos-cdr\\models\\metadata\\feature_schema.json",
+    "schema_path": "D:\\Projects\\GitHub Directory\\PHAROS\\models\\metadata\\feature_schema.json",
     "seed": 42,
     "split": ""
   },
   "dataset": {
-    "fingerprint": "faa6cf44f28c7916db1e78c91140145b1da77a13a7e29fa4d28264c33b9021df",
-    "schema_fingerprint": "bc88848bad01916f4cbe66e534c252f1cab5b703d337247f1cde8e56f72f65d1",
+    "fingerprint": "c179735db810815f53865f6c2c1d37bc68e7b5511e5e758405ba09e26501ff6e",
+    "schema_fingerprint": "af8328810b3368bfc71112998047e309d5f3d37eabcb1fcd36484edd43f10cd8",
     "statistics": {
       "benign_count": 1,
       "duplicate_sample_ids": 0,
       "duplicate_sha256": 0,
-      "feature_count": 4319,
+      "feature_count": 4321,
       "feature_statistics": {
         "behavior_credentials_access_count": {
           "max": 0.0,
@@ -2436,12 +2436,12 @@
           "std": 0.0
         },
         "behavior_credentials_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "behavior_credentials_token_signal_count": {
           "max": 0.0,
@@ -2604,12 +2604,12 @@
           "std": 0.0
         },
         "behavior_environment_category_count": {
-          "max": 3.0,
-          "mean": 2.5,
+          "max": 4.0,
+          "mean": 3.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.816496580927726
         },
         "behavior_environment_category_current_directory_count": {
           "max": 0.0,
@@ -2756,19 +2756,19 @@
           "std": 0.0
         },
         "behavior_environment_category_environment_variables_count": {
-          "max": 8.0,
-          "mean": 8.0,
+          "max": 16.0,
+          "mean": 10.666666666666666,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 3.7712361663282534
         },
         "behavior_environment_category_environment_variables_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_environment_category_execution_environment_count": {
@@ -3157,18 +3157,18 @@
         },
         "behavior_environment_category_session_discovery_count": {
           "max": 4.0,
-          "mean": 3.5,
+          "mean": 3.3333333333333335,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "behavior_environment_category_session_discovery_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_environment_category_system_directory_count": {
@@ -3237,35 +3237,35 @@
         },
         "behavior_environment_category_timezone_count": {
           "max": 2.0,
-          "mean": 1.0,
+          "mean": 1.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 1.0
+          "nonzero": 2.0,
+          "std": 0.9428090415820634
         },
         "behavior_environment_category_timezone_present": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
+          "missing": 0.0,
+          "nonzero": 2.0,
+          "std": 0.4714045207910317
+        },
+        "behavior_environment_category_user_discovery_count": {
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
-        },
-        "behavior_environment_category_user_discovery_count": {
-          "max": 0.0,
-          "mean": 0.0,
-          "min": 0.0,
-          "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "std": 0.9428090415820634
         },
         "behavior_environment_category_user_discovery_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "behavior_environment_category_username_count": {
           "max": 0.0,
@@ -3444,36 +3444,36 @@
           "std": 0.0
         },
         "behavior_environment_discover_count": {
-          "max": 13.0,
-          "mean": 12.5,
+          "max": 23.0,
+          "mean": 16.0,
           "min": 12.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 4.96655480858378
         },
         "behavior_environment_environment_fingerprint_count": {
-          "max": 10.0,
-          "mean": 9.0,
+          "max": 18.0,
+          "mean": 12.0,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 4.320493798938574
         },
         "behavior_environment_environment_signal_score": {
-          "max": 1.716,
-          "mean": 1.67,
+          "max": 3.016,
+          "mean": 2.1186666666666665,
           "min": 1.624,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.04599999999999993
+          "nonzero": 3.0,
+          "std": 0.6356211310381541
         },
         "behavior_environment_evidence_count": {
-          "max": 13.0,
-          "mean": 12.5,
+          "max": 23.0,
+          "mean": 16.0,
           "min": 12.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 4.96655480858378
         },
         "behavior_environment_gate_count": {
           "max": 0.0,
@@ -3484,12 +3484,12 @@
           "std": 0.0
         },
         "behavior_environment_generic_platform_count": {
-          "max": 10.0,
-          "mean": 9.0,
+          "max": 18.0,
+          "mean": 12.0,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 4.320493798938574
         },
         "behavior_environment_high_count": {
           "max": 0.0,
@@ -3628,12 +3628,12 @@
           "std": 0.0
         },
         "behavior_environment_indicator_count": {
-          "max": 3.0,
-          "mean": 2.5,
+          "max": 4.0,
+          "mean": 3.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.816496580927726
         },
         "behavior_environment_indicator_current_directory_count": {
           "max": 0.0,
@@ -3764,19 +3764,19 @@
           "std": 0.0
         },
         "behavior_environment_indicator_environment_variable_expansion_count": {
-          "max": 8.0,
-          "mean": 8.0,
+          "max": 16.0,
+          "mean": 10.666666666666666,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 3.7712361663282534
         },
         "behavior_environment_indicator_environment_variable_expansion_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_environment_indicator_execution_policy_count": {
@@ -3860,20 +3860,20 @@
           "std": 0.0
         },
         "behavior_environment_indicator_id_discovery_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "behavior_environment_indicator_id_discovery_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "behavior_environment_indicator_integrity_level_count": {
           "max": 0.0,
@@ -4197,19 +4197,19 @@
         },
         "behavior_environment_indicator_timezone_detection_count": {
           "max": 2.0,
-          "mean": 1.0,
+          "mean": 1.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 1.0
+          "nonzero": 2.0,
+          "std": 0.9428090415820634
         },
         "behavior_environment_indicator_timezone_detection_present": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.4714045207910317
         },
         "behavior_environment_indicator_uname_discovery_count": {
           "max": 0.0,
@@ -4277,18 +4277,18 @@
         },
         "behavior_environment_indicator_who_command_count": {
           "max": 4.0,
-          "mean": 3.5,
+          "mean": 3.3333333333333335,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "behavior_environment_indicator_who_command_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_environment_indicator_whoami_domain_count": {
@@ -4348,12 +4348,12 @@
           "std": 0.0
         },
         "behavior_environment_linux_count": {
-          "max": 4.0,
-          "mean": 3.5,
+          "max": 5.0,
+          "mean": 4.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.816496580927726
         },
         "behavior_environment_location_count": {
           "max": 0.0,
@@ -4364,12 +4364,12 @@
           "std": 0.0
         },
         "behavior_environment_low_count": {
-          "max": 13.0,
-          "mean": 12.5,
+          "max": 23.0,
+          "mean": 16.0,
           "min": 12.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 4.96655480858378
         },
         "behavior_environment_macos_count": {
           "max": 0.0,
@@ -4392,24 +4392,24 @@
           "mean": 2.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_environment_record_count": {
-          "max": 13.0,
-          "mean": 12.5,
+          "max": 23.0,
+          "mean": 16.0,
           "min": 12.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 4.96655480858378
         },
         "behavior_environment_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "behavior_environment_unknown_operation_count": {
           "max": 0.0,
@@ -4696,7 +4696,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_category_debugger_artifact_check_count": {
@@ -5180,19 +5180,19 @@
           "std": 0.0
         },
         "behavior_evasion_category_powershell_obfuscation_count": {
-          "max": 12.0,
-          "mean": 10.5,
+          "max": 52.0,
+          "mean": 24.333333333333332,
           "min": 9.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 19.601587237318874
         },
         "behavior_evasion_category_powershell_obfuscation_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_category_privilege_abuse_count": {
@@ -5804,20 +5804,20 @@
           "std": 0.0
         },
         "behavior_evasion_evasion_signal_score": {
-          "max": 38.0362,
-          "mean": 33.29235,
+          "max": 100.0,
+          "mean": 55.52823333333333,
           "min": 28.5485,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 4.74385
+          "nonzero": 3.0,
+          "std": 31.68393531600658
         },
         "behavior_evasion_evidence_count": {
-          "max": 12.0,
-          "mean": 10.5,
+          "max": 52.0,
+          "mean": 24.333333333333332,
           "min": 9.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 19.601587237318874
         },
         "behavior_evasion_hide_count": {
           "max": 0.0,
@@ -5992,7 +5992,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_indicator_debugger_api_count": {
@@ -6556,19 +6556,19 @@
           "std": 0.0
         },
         "behavior_evasion_indicator_powershell_obfuscation_count": {
-          "max": 12.0,
-          "mean": 10.5,
+          "max": 52.0,
+          "mean": 24.333333333333332,
           "min": 9.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 19.601587237318874
         },
         "behavior_evasion_indicator_powershell_obfuscation_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_indicator_process_hollowing_count": {
@@ -6948,19 +6948,19 @@
           "std": 0.0
         },
         "behavior_evasion_medium_count": {
-          "max": 12.0,
-          "mean": 10.5,
+          "max": 52.0,
+          "mean": 24.333333333333332,
           "min": 9.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 19.601587237318874
         },
         "behavior_evasion_obfuscate_count": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_pack_count": {
@@ -6976,7 +6976,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_record_count": {
@@ -6984,7 +6984,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_evasion_resolve_count": {
@@ -6996,12 +6996,12 @@
           "std": 0.0
         },
         "behavior_evasion_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "behavior_evasion_unknown_count": {
           "max": 0.0,
@@ -7016,7 +7016,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_category_authentication_count": {
@@ -7088,7 +7088,7 @@
           "mean": 2.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_category_dns_count": {
@@ -7108,19 +7108,19 @@
           "std": 0.0
         },
         "behavior_network_network_category_domain_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "behavior_network_network_category_domain_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_category_download_count": {
@@ -7525,18 +7525,18 @@
         },
         "behavior_network_network_category_port_count": {
           "max": 4.0,
-          "mean": 3.0,
+          "mean": 3.3333333333333335,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "behavior_network_network_category_port_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_category_proxy_count": {
@@ -7956,20 +7956,20 @@
           "std": 0.0
         },
         "behavior_network_network_domain_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "behavior_network_network_evidence_count": {
-          "max": 29.0,
-          "mean": 28.0,
+          "max": 35.0,
+          "mean": 30.333333333333332,
           "min": 27.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 3.39934634239519
         },
         "behavior_network_network_high_severity_count": {
           "max": 0.0,
@@ -7980,12 +7980,12 @@
           "std": 0.0
         },
         "behavior_network_network_host_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "behavior_network_network_indicator_arp_count": {
           "max": 0.0,
@@ -8072,7 +8072,7 @@
           "mean": 2.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_indicator_credential_network_access_count": {
@@ -8124,19 +8124,19 @@
           "std": 0.0
         },
         "behavior_network_network_indicator_domain_name_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "behavior_network_network_indicator_domain_name_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_indicator_encrypted_transport_count": {
@@ -8461,18 +8461,18 @@
         },
         "behavior_network_network_indicator_port_reference_count": {
           "max": 4.0,
-          "mean": 3.0,
+          "mean": 3.3333333333333335,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "behavior_network_network_indicator_port_reference_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_network_network_indicator_powershell_web_request_count": {
@@ -8965,11 +8965,11 @@
         },
         "behavior_network_network_port_count": {
           "max": 4.0,
-          "mean": 3.0,
+          "mean": 3.3333333333333335,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "behavior_network_network_protocol_count": {
           "max": 0.0,
@@ -8988,28 +8988,28 @@
           "std": 0.0
         },
         "behavior_network_network_record_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "behavior_network_network_signal_score": {
-          "max": 9.578,
-          "mean": 9.245999999999999,
+          "max": 11.558,
+          "mean": 10.016666666666666,
           "min": 8.914,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.33199999999999985
+          "nonzero": 3.0,
+          "std": 1.1230925557980025
         },
         "behavior_network_network_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "behavior_network_network_url_count": {
           "max": 0.0,
@@ -11452,12 +11452,12 @@
           "std": 0.0
         },
         "behavior_persistence_persistence_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "behavior_process_process_category_command_interpreter": {
           "max": 0.0,
@@ -11816,7 +11816,7 @@
           "mean": 11.0,
           "min": 11.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_process_process_combination_hidden_process_execution": {
@@ -12644,12 +12644,12 @@
           "std": 0.0
         },
         "behavior_process_process_source_size": {
-          "max": 29282.0,
-          "mean": 28852.0,
+          "max": 65346.0,
+          "mean": 41016.666666666664,
           "min": 28422.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 430.0
+          "nonzero": 3.0,
+          "std": 17207.018826307154
         },
         "behavior_process_process_unique_name_count": {
           "max": 0.0,
@@ -13384,7 +13384,7 @@
           "mean": 14.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "behavior_registry_registry_combination_firewall_modification": {
@@ -14396,12 +14396,12 @@
           "std": 0.0
         },
         "behavior_registry_registry_source_size": {
-          "max": 85.0,
-          "mean": 84.0,
-          "min": 83.0,
+          "max": 81.0,
+          "mean": 78.0,
+          "min": 74.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 2.943920288775949
         },
         "behavior_registry_registry_suspicious_path_count": {
           "max": 0.0,
@@ -14436,12 +14436,12 @@
           "std": 0.0
         },
         "capabilities_communication_c2_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_communication_callback_count": {
           "max": 0.0,
@@ -14460,12 +14460,12 @@
           "std": 0.0
         },
         "capabilities_communication_category_c2": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_communication_category_callback": {
           "max": 0.0,
@@ -14476,12 +14476,12 @@
           "std": 0.0
         },
         "capabilities_communication_category_cloud": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_communication_category_command_channel": {
           "max": 0.0,
@@ -14508,12 +14508,12 @@
           "std": 0.0
         },
         "capabilities_communication_category_count": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 3.0,
+          "mean": 1.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 1.247219128924647
         },
         "capabilities_communication_category_credentialed_communication": {
           "max": 0.0,
@@ -14620,12 +14620,12 @@
           "std": 0.0
         },
         "capabilities_communication_category_network": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 2.0,
+          "mean": 1.0,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.816496580927726
         },
         "capabilities_communication_category_network_discovery": {
           "max": 0.0,
@@ -14756,12 +14756,12 @@
           "std": 0.0
         },
         "capabilities_communication_cloud_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_communication_combination_beacon_polling": {
           "max": 0.0,
@@ -14964,12 +14964,12 @@
           "std": 0.0
         },
         "capabilities_communication_cross_platform_count": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 5.0,
+          "mean": 2.0,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 2.160246899469287
         },
         "capabilities_communication_dns_count": {
           "max": 0.0,
@@ -15012,12 +15012,12 @@
           "std": 0.0
         },
         "capabilities_communication_evidence_count": {
-          "max": 2.0,
-          "mean": 1.0,
+          "max": 9.0,
+          "mean": 3.6666666666666665,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 1.0
+          "nonzero": 2.0,
+          "std": 3.858612300930075
         },
         "capabilities_communication_exfiltration_channel_count": {
           "max": 0.0,
@@ -15036,12 +15036,12 @@
           "std": 0.0
         },
         "capabilities_communication_high_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_communication_http_count": {
           "max": 0.0,
@@ -15067,21 +15067,37 @@
           "nonzero": 0.0,
           "std": 0.0
         },
-        "capabilities_communication_indicator_count": {
-          "max": 1.0,
-          "mean": 0.5,
+        "capabilities_communication_indicator_c2": {
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.9428090415820634
+        },
+        "capabilities_communication_indicator_cloud_storage": {
+          "max": 1.0,
+          "mean": 0.3333333333333333,
+          "min": 0.0,
+          "missing": 0.0,
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
+        },
+        "capabilities_communication_indicator_count": {
+          "max": 3.0,
+          "mean": 1.3333333333333333,
+          "min": 0.0,
+          "missing": 0.0,
+          "nonzero": 2.0,
+          "std": 1.247219128924647
         },
         "capabilities_communication_indicator_unix_network_tool": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 2.0,
+          "mean": 1.0,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.816496580927726
         },
         "capabilities_communication_ipc_count": {
           "max": 0.0,
@@ -15116,12 +15132,12 @@
           "std": 0.0
         },
         "capabilities_communication_network_count": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 2.0,
+          "mean": 1.0,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.816496580927726
         },
         "capabilities_communication_network_discovery_count": {
           "max": 0.0,
@@ -15133,19 +15149,19 @@
         },
         "capabilities_communication_operation_count": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.4714045207910317
         },
         "capabilities_communication_platform_count": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 0.4714045207910317
         },
         "capabilities_communication_polling_count": {
           "max": 0.0,
@@ -15164,12 +15180,12 @@
           "std": 0.0
         },
         "capabilities_communication_protocol_count": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 3.0,
+          "mean": 1.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 1.247219128924647
         },
         "capabilities_communication_proxy_count": {
           "max": 0.0,
@@ -15180,12 +15196,12 @@
           "std": 0.0
         },
         "capabilities_communication_record_count": {
-          "max": 1.0,
-          "mean": 0.5,
+          "max": 5.0,
+          "mean": 2.0,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.5
+          "nonzero": 2.0,
+          "std": 2.160246899469287
         },
         "capabilities_communication_remote_resource_count": {
           "max": 0.0,
@@ -15196,12 +15212,12 @@
           "std": 0.0
         },
         "capabilities_communication_signal_score": {
-          "max": 0.88,
-          "mean": 0.44,
+          "max": 6.43,
+          "mean": 2.4366666666666665,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 1.0,
-          "std": 0.44
+          "nonzero": 2.0,
+          "std": 2.8464754034107203
         },
         "capabilities_communication_smb_count": {
           "max": 0.0,
@@ -15228,12 +15244,12 @@
           "std": 0.0
         },
         "capabilities_communication_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "capabilities_communication_staged_communication_count": {
           "max": 0.0,
@@ -15516,20 +15532,20 @@
           "std": 0.0
         },
         "capabilities_derived_capability_command_and_control": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_capability_command_and_control_confidence": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 0.94,
+          "mean": 0.3133333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.44312024954356977
         },
         "capabilities_derived_capability_command_execution": {
           "max": 0.0,
@@ -15580,12 +15596,12 @@
           "std": 0.0
         },
         "capabilities_derived_capability_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_derived_capability_credential_access": {
           "max": 0.0,
@@ -16356,20 +16372,20 @@
           "std": 0.0
         },
         "capabilities_derived_capability_remote_command": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_capability_remote_command_confidence": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 0.9,
+          "mean": 0.3,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4242640687119285
         },
         "capabilities_derived_capability_remote_resource_access": {
           "max": 0.0,
@@ -16564,12 +16580,12 @@
           "std": 0.0
         },
         "capabilities_derived_category_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_combination_anti_analysis_execute": {
           "max": 0.0,
@@ -16588,12 +16604,12 @@
           "std": 0.0
         },
         "capabilities_derived_combination_c2_remote_command": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_combination_callback_execute": {
           "max": 0.0,
@@ -16612,12 +16628,12 @@
           "std": 0.0
         },
         "capabilities_derived_combination_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_combination_credential_collect_exfiltrate": {
           "max": 0.0,
@@ -16740,20 +16756,20 @@
           "std": 0.0
         },
         "capabilities_derived_critical_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_derived_evidence_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "capabilities_derived_high_count": {
           "max": 0.0,
@@ -16764,28 +16780,28 @@
           "std": 0.0
         },
         "capabilities_derived_indicator_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_derived_signal_score": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 9.835,
+          "mean": 3.2783333333333338,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 4.636263461979797
         },
         "capabilities_derived_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "capabilities_dynamic_execution_allocate_count": {
           "max": 0.0,
@@ -17288,7 +17304,7 @@
           "mean": 14.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "capabilities_dynamic_execution_combination_present_assembly_reflection_chain": {
@@ -18700,12 +18716,12 @@
           "std": 0.0
         },
         "capabilities_dynamic_execution_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "capabilities_dynamic_execution_unique_target_count": {
           "max": 0.0,
@@ -18796,20 +18812,20 @@
           "std": 0.0
         },
         "capabilities_payload_category_archive_payload_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_archive_payload_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_assembly_payload_count": {
           "max": 0.0,
@@ -18860,12 +18876,12 @@
           "std": 0.0
         },
         "capabilities_payload_category_count": {
-          "max": 1.0,
-          "mean": 1.0,
+          "max": 2.0,
+          "mean": 1.3333333333333333,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_dll_payload_count": {
           "max": 0.0,
@@ -18901,19 +18917,19 @@
         },
         "capabilities_payload_category_executable_payload_count": {
           "max": 6.0,
-          "mean": 6.0,
-          "min": 6.0,
+          "mean": 4.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 2.8284271247461903
         },
         "capabilities_payload_category_executable_payload_present": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_javascript_payload_count": {
           "max": 0.0,
@@ -19076,20 +19092,20 @@
           "std": 0.0
         },
         "capabilities_payload_category_payload_decryption_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_payload_decryption_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_category_payload_download_count": {
           "max": 0.0,
@@ -19488,7 +19504,7 @@
           "mean": 17.0,
           "min": 17.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "capabilities_payload_combination_decode_execute_present": {
@@ -19660,20 +19676,20 @@
           "std": 0.0
         },
         "capabilities_payload_decompress_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_decrypt_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_download_count": {
           "max": 0.0,
@@ -19709,11 +19725,11 @@
         },
         "capabilities_payload_evidence_count": {
           "max": 6.0,
-          "mean": 6.0,
-          "min": 6.0,
+          "mean": 4.666666666666667,
+          "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.8856180831641267
         },
         "capabilities_payload_execute_count": {
           "max": 0.0,
@@ -19756,12 +19772,12 @@
           "std": 0.0
         },
         "capabilities_payload_high_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_identify_count": {
           "max": 0.0,
@@ -19812,20 +19828,20 @@
           "std": 0.0
         },
         "capabilities_payload_indicator_archive_payload_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_archive_payload_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_assembly_load_count": {
           "max": 0.0,
@@ -19896,7 +19912,7 @@
           "mean": 2.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "capabilities_payload_indicator_curl_wget_download_count": {
@@ -19981,35 +19997,35 @@
         },
         "capabilities_payload_indicator_executable_payload_reference_count": {
           "max": 3.0,
-          "mean": 3.0,
-          "min": 3.0,
+          "mean": 2.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 1.4142135623730951
         },
         "capabilities_payload_indicator_executable_payload_reference_present": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_executable_reference_count": {
           "max": 3.0,
-          "mean": 3.0,
-          "min": 3.0,
+          "mean": 2.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 1.4142135623730951
         },
         "capabilities_payload_indicator_executable_reference_present": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_explicit_payload_reference_count": {
           "max": 0.0,
@@ -20252,20 +20268,20 @@
           "std": 0.0
         },
         "capabilities_payload_indicator_payload_encryption_count": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_payload_encryption_present": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "capabilities_payload_indicator_payload_fragmentation_count": {
           "max": 0.0,
@@ -20677,11 +20693,11 @@
         },
         "capabilities_payload_platform_count": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "capabilities_payload_reassemble_count": {
           "max": 0.0,
@@ -20693,35 +20709,35 @@
         },
         "capabilities_payload_record_count": {
           "max": 4.0,
-          "mean": 4.0,
-          "min": 4.0,
+          "mean": 3.3333333333333335,
+          "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "capabilities_payload_reference_count": {
           "max": 6.0,
-          "mean": 6.0,
-          "min": 6.0,
+          "mean": 4.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 2.8284271247461903
         },
         "capabilities_payload_signal_score": {
           "max": 4.4399999999999995,
-          "mean": 4.4399999999999995,
-          "min": 4.4399999999999995,
+          "mean": 3.7966666666666664,
+          "min": 2.5100000000000002,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9098107251266908
         },
         "capabilities_payload_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "capabilities_payload_stage_count": {
           "max": 0.0,
@@ -20733,11 +20749,11 @@
         },
         "capabilities_payload_target_count": {
           "max": 2.0,
-          "mean": 2.0,
-          "min": 2.0,
+          "mean": 1.3333333333333333,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.9428090415820634
         },
         "capabilities_payload_transfer_count": {
           "max": 0.0,
@@ -20749,11 +20765,11 @@
         },
         "capabilities_payload_windows_count": {
           "max": 6.0,
-          "mean": 6.0,
-          "min": 6.0,
+          "mean": 4.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 2.8284271247461903
         },
         "capabilities_payload_write_count": {
           "max": 0.0,
@@ -20765,43 +20781,43 @@
         },
         "common_entropy_entropy_ascii_ratio": {
           "max": 0.593393,
-          "mean": 0.592724,
-          "min": 0.592055,
+          "mean": 0.569576,
+          "min": 0.52328,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0006689999999999752
+          "nonzero": 3.0,
+          "std": 0.03274077247103373
         },
         "common_entropy_entropy_byte_diversity": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_chunk_count": {
-          "max": 5.0,
-          "mean": 5.0,
+          "max": 9.0,
+          "mean": 6.333333333333333,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.8856180831641267
         },
         "common_entropy_entropy_chunk_high_count": {
-          "max": 3.0,
-          "mean": 3.0,
+          "max": 9.0,
+          "mean": 5.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "common_entropy_entropy_chunk_high_ratio": {
-          "max": 0.6,
-          "mean": 0.6,
+          "max": 1.0,
+          "mean": 0.7333333333333334,
           "min": 0.6,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.18856180831641267
         },
         "common_entropy_entropy_chunk_low_count": {
           "max": 0.0,
@@ -20821,107 +20837,107 @@
         },
         "common_entropy_entropy_chunk_max": {
           "max": 7.941595,
-          "mean": 7.9385505,
-          "min": 7.935506,
+          "mean": 7.935058333333333,
+          "min": 7.928074,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0030445000000001166
+          "nonzero": 3.0,
+          "std": 0.005528994141995974
         },
         "common_entropy_entropy_chunk_max_transition": {
           "max": 2.706271,
-          "mean": 2.2289875,
-          "min": 1.751704,
+          "mean": 1.6581746666666666,
+          "min": 0.516549,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.4772835000000001
+          "nonzero": 3.0,
+          "std": 0.8963932959240356
         },
         "common_entropy_entropy_chunk_mean": {
-          "max": 7.011113,
-          "mean": 6.888593999999999,
+          "max": 7.852042,
+          "mean": 7.209743333333333,
           "min": 6.766075,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.12251900000000004
+          "nonzero": 3.0,
+          "std": 0.46506027441779585
         },
         "common_entropy_entropy_chunk_median": {
-          "max": 7.368532,
-          "mean": 7.303959,
+          "max": 7.903354,
+          "mean": 7.503757333333333,
           "min": 7.239386,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.06457300000000021
+          "nonzero": 3.0,
+          "std": 0.2874343917457031
         },
         "common_entropy_entropy_chunk_min": {
-          "max": 5.625351,
-          "mean": 5.079233,
+          "max": 7.411526,
+          "mean": 5.856663999999999,
           "min": 4.533115,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5461180000000003
+          "nonzero": 3.0,
+          "std": 1.1864349256510731
         },
         "common_entropy_entropy_chunk_size": {
           "max": 4096.0,
           "mean": 4096.0,
           "min": 4096.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_chunk_stddev": {
           "max": 1.2845,
-          "mean": 1.113047,
-          "min": 0.941594,
+          "mean": 0.7942043333333334,
+          "min": 0.156519,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.17145299999999997
+          "nonzero": 3.0,
+          "std": 0.4721426828621007
         },
         "common_entropy_entropy_chunk_transition_count": {
           "max": 2.0,
-          "mean": 2.0,
-          "min": 2.0,
+          "mean": 1.3333333333333333,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.9428090415820634
         },
         "common_entropy_entropy_chunk_very_high_count": {
-          "max": 2.0,
-          "mean": 2.0,
+          "max": 8.0,
+          "mean": 4.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "common_entropy_entropy_chunk_very_high_ratio": {
-          "max": 0.4,
-          "mean": 0.4,
+          "max": 0.888889,
+          "mean": 0.562963,
           "min": 0.4,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.2304644847650067
         },
         "common_entropy_entropy_control_byte_ratio": {
           "max": 0.257415,
-          "mean": 0.255051,
-          "min": 0.252687,
+          "mean": 0.21986233333333335,
+          "min": 0.149485,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.002364000000000005
+          "nonzero": 3.0,
+          "std": 0.04980170868108398
         },
         "common_entropy_entropy_data_size_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_entropy_entropy_distribution_uniformity": {
-          "max": 0.836438,
-          "mean": 0.833574,
+          "max": 0.934263,
+          "mean": 0.8671369999999999,
           "min": 0.83071,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.002864000000000033
+          "nonzero": 3.0,
+          "std": 0.047522818399866246
         },
         "common_entropy_entropy_empty": {
           "max": 0.0,
@@ -20932,20 +20948,20 @@
           "std": 0.0
         },
         "common_entropy_entropy_file_size_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_entropy_entropy_high_byte_ratio": {
-          "max": 0.407945,
-          "mean": 0.40727599999999997,
+          "max": 0.47672,
+          "mean": 0.430424,
           "min": 0.406607,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0006690000000000029
+          "nonzero": 3.0,
+          "std": 0.03274077247103372
         },
         "common_entropy_entropy_high_region_count": {
           "max": 0.0,
@@ -20960,7 +20976,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_is_low": {
@@ -20972,12 +20988,12 @@
           "std": 0.0
         },
         "common_entropy_entropy_is_very_high": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "common_entropy_entropy_largest_high_region_bytes": {
           "max": 0.0,
@@ -20989,67 +21005,67 @@
         },
         "common_entropy_entropy_loss": {
           "max": 0.581844,
-          "mean": 0.5707735,
-          "min": 0.559703,
+          "mean": 0.3933883333333333,
+          "min": 0.038618,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.011070500000000039
+          "nonzero": 3.0,
+          "std": 0.2510233030754095
         },
         "common_entropy_entropy_max_sample_size": {
           "max": 4194304.0,
           "mean": 4194304.0,
           "min": 4194304.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_most_common_byte_ratio": {
           "max": 0.142631,
-          "mean": 0.140827,
-          "min": 0.139023,
+          "mean": 0.10052966666666667,
+          "min": 0.019935,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.001804
+          "nonzero": 3.0,
+          "std": 0.057008067483666054
         },
         "common_entropy_entropy_normalized": {
-          "max": 0.930037,
-          "mean": 0.928653,
+          "max": 0.995173,
+          "mean": 0.9508263333333332,
           "min": 0.927269,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0013839999999999963
+          "nonzero": 3.0,
+          "std": 0.03137818339051654
         },
         "common_entropy_entropy_null_ratio": {
           "max": 0.142631,
-          "mean": 0.140827,
-          "min": 0.139023,
+          "mean": 0.10052966666666667,
+          "min": 0.019935,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.001804
+          "nonzero": 3.0,
+          "std": 0.057008067483666054
         },
         "common_entropy_entropy_printable_ratio": {
-          "max": 0.350088,
-          "mean": 0.346927,
+          "max": 0.38521,
+          "mean": 0.359688,
           "min": 0.343766,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.003160999999999997
+          "nonzero": 3.0,
+          "std": 0.018230401056111366
         },
         "common_entropy_entropy_sample_coverage_ratio": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_sample_size_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_entropy_entropy_sampling_used": {
           "max": 0.0,
@@ -21060,12 +21076,12 @@
           "std": 0.0
         },
         "common_entropy_entropy_shannon": {
-          "max": 7.440297,
-          "mean": 7.4292265,
+          "max": 7.961382,
+          "mean": 7.606611666666667,
           "min": 7.418156,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.011070500000000205
+          "nonzero": 3.0,
+          "std": 0.2510233030754097
         },
         "common_entropy_entropy_significant_transition_count": {
           "max": 0.0,
@@ -21080,7 +21096,7 @@
           "mean": 256.0,
           "min": 256.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_version": {
@@ -21088,32 +21104,32 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_window_count": {
-          "max": 7.0,
-          "mean": 7.0,
+          "max": 16.0,
+          "mean": 10.0,
           "min": 7.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 4.242640687119285
         },
         "common_entropy_entropy_window_high_count": {
-          "max": 6.0,
-          "mean": 6.0,
+          "max": 16.0,
+          "mean": 9.333333333333334,
           "min": 6.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 4.714045207910317
         },
         "common_entropy_entropy_window_high_ratio": {
-          "max": 0.857143,
-          "mean": 0.857143,
+          "max": 1.0,
+          "mean": 0.904762,
           "min": 0.857143,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.06734343562664442
         },
         "common_entropy_entropy_window_low_count": {
           "max": 0.0,
@@ -21133,75 +21149,75 @@
         },
         "common_entropy_entropy_window_max": {
           "max": 7.941595,
-          "mean": 7.9385505,
-          "min": 7.935506,
+          "mean": 7.935058333333333,
+          "min": 7.928074,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0030445000000001166
+          "nonzero": 3.0,
+          "std": 0.005528994141995974
         },
         "common_entropy_entropy_window_mean": {
-          "max": 7.573596,
-          "mean": 7.5625435,
+          "max": 7.907451,
+          "mean": 7.677512666666668,
           "min": 7.551491,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.01105249999999991
+          "nonzero": 3.0,
+          "std": 0.16284120201049296
         },
         "common_entropy_entropy_window_median": {
           "max": 7.920955,
-          "mean": 7.9181365,
-          "min": 7.915318,
+          "mean": 7.914471666666667,
+          "min": 7.907142,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.002818500000000057
+          "nonzero": 3.0,
+          "std": 0.005670799610480117
         },
         "common_entropy_entropy_window_min": {
-          "max": 6.195788,
-          "mean": 6.19284,
+          "max": 7.873297,
+          "mean": 6.752992333333334,
           "min": 6.189892,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0029479999999999507
+          "nonzero": 3.0,
+          "std": 0.7921786836820478
         },
         "common_entropy_entropy_window_size": {
           "max": 4096.0,
           "mean": 4096.0,
           "min": 4096.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_window_stddev": {
           "max": 0.600518,
-          "mean": 0.59849,
-          "min": 0.596462,
+          "mean": 0.40357266666666664,
+          "min": 0.013738,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0020279999999999743
+          "nonzero": 3.0,
+          "std": 0.27565970964860925
         },
         "common_entropy_entropy_window_step": {
           "max": 2048.0,
           "mean": 2048.0,
           "min": 2048.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_entropy_entropy_window_very_high_count": {
-          "max": 5.0,
-          "mean": 5.0,
+          "max": 16.0,
+          "mean": 8.666666666666666,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 5.185449728701348
         },
         "common_entropy_entropy_window_very_high_ratio": {
-          "max": 0.714286,
-          "mean": 0.714286,
+          "max": 1.0,
+          "mean": 0.809524,
           "min": 0.714286,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.13468687125328885
         },
         "common_file_features_content_indicator_bitsadmin_marker": {
           "max": 0.0,
@@ -21356,83 +21372,83 @@
           "std": 0.0
         },
         "common_file_features_content_sample_ascii_string_count": {
-          "max": 186.0,
-          "mean": 180.0,
+          "max": 436.0,
+          "mean": 265.3333333333333,
           "min": 174.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 6.0
+          "nonzero": 3.0,
+          "std": 120.77895328059255
         },
         "common_file_features_content_sample_avg_ascii_string_length": {
           "max": 7.086207,
-          "mean": 6.98934,
-          "min": 6.892473,
+          "mean": 6.624391666666667,
+          "min": 5.894495,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.09686700000000004
+          "nonzero": 3.0,
+          "std": 0.5221398750637184
         },
         "common_file_features_content_sample_byte_diversity": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_content_sample_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_file_features_content_sample_entropy": {
-          "max": 7.440297,
-          "mean": 7.4292265,
+          "max": 7.961382,
+          "mean": 7.606611666666667,
           "min": 7.418156,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.011070500000000205
+          "nonzero": 3.0,
+          "std": 0.2510233030754097
         },
         "common_file_features_content_sample_high_byte_ratio": {
-          "max": 0.407945,
-          "mean": 0.40727599999999997,
+          "max": 0.47672,
+          "mean": 0.430424,
           "min": 0.406607,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0006690000000000029
+          "nonzero": 3.0,
+          "std": 0.03274077247103372
         },
         "common_file_features_content_sample_max_ascii_string_length": {
           "max": 32.0,
           "mean": 32.0,
           "min": 32.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_content_sample_null_ratio": {
           "max": 0.142631,
-          "mean": 0.140827,
-          "min": 0.139023,
+          "mean": 0.10052966666666667,
+          "min": 0.019935,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.001804
+          "nonzero": 3.0,
+          "std": 0.057008067483666054
         },
         "common_file_features_content_sample_printable_ratio": {
-          "max": 0.350088,
-          "mean": 0.346927,
+          "max": 0.38521,
+          "mean": 0.359688,
           "min": 0.343766,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.003160999999999997
+          "nonzero": 3.0,
+          "std": 0.018230401056111366
         },
         "common_file_features_content_sample_unique_bytes": {
           "max": 256.0,
           "mean": 256.0,
           "min": 256.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_extension_magic_mismatch": {
@@ -21456,7 +21472,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_extraction_version": {
@@ -21464,7 +21480,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_has_known_magic": {
@@ -21472,7 +21488,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_is_empty": {
@@ -21488,7 +21504,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_mode": {
@@ -21496,7 +21512,7 @@
           "mean": 33206.0,
           "min": 33206.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_owner_readable": {
@@ -21504,7 +21520,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_owner_writable": {
@@ -21512,7 +21528,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_readable": {
@@ -21520,47 +21536,47 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_file_size_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_file_features_file_size_kb": {
-          "max": 17.174805,
-          "mean": 16.933594,
+          "max": 35.760742,
+          "mean": 23.20931,
           "min": 16.692383,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.24121099999999984
+          "nonzero": 3.0,
+          "std": 8.877387629420756
         },
         "common_file_features_file_size_log2": {
-          "max": 14.102222,
-          "mean": 14.081669999999999,
+          "max": 15.160305,
+          "mean": 14.441215,
           "min": 14.061118,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.02055199999999946
+          "nonzero": 3.0,
+          "std": 0.5087502372015824
         },
         "common_file_features_file_size_mb": {
-          "max": 0.016772,
-          "mean": 0.0165365,
+          "max": 0.034923,
+          "mean": 0.022665333333333332,
           "min": 0.016301,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0002354999999999996
+          "nonzero": 3.0,
+          "std": 0.008669611845726174
         },
         "common_file_features_filename_extension_chain_count": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_filename_extension_count": {
@@ -21568,7 +21584,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_filename_has_control_chars": {
@@ -21640,7 +21656,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_filename_is_script_extension": {
@@ -21653,42 +21669,42 @@
         },
         "common_file_features_filename_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_file_features_filename_lowercase_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_file_features_filename_stem_length": {
           "max": 22.0,
-          "mean": 21.5,
-          "min": 21.0,
+          "mean": 19.0,
+          "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_file_features_header_entropy": {
-          "max": 6.195788,
-          "mean": 6.19284,
+          "max": 7.898164,
+          "mean": 6.761281333333334,
           "min": 6.189892,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0029479999999999507
+          "nonzero": 3.0,
+          "std": 0.8039010465761456
         },
         "common_file_features_header_length": {
           "max": 4096.0,
           "mean": 4096.0,
           "min": 4096.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_header_starts_with_elf": {
@@ -21728,7 +21744,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_is_valid_zip": {
@@ -21736,7 +21752,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_is_zip_container": {
@@ -21744,7 +21760,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_looks_like_executable": {
@@ -21760,7 +21776,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_looks_like_script": {
@@ -21780,36 +21796,36 @@
           "std": 0.0
         },
         "common_file_features_zip_compressed_bytes": {
-          "max": 14141.0,
-          "mean": 13894.0,
+          "max": 34627.0,
+          "mean": 20805.0,
           "min": 13647.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9775.710443065847
         },
         "common_file_features_zip_compression_ratio": {
-          "max": 5.548032534622994,
-          "mean": 5.451125382649875,
+          "max": 23.861784156871806,
+          "mean": 11.58801164072385,
           "min": 5.354218230676755,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.09690715197311928
+          "nonzero": 3.0,
+          "std": 8.679228453793774
         },
         "common_file_features_zip_directory_depth_max": {
           "max": 3.0,
           "mean": 3.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_file_features_zip_entry_count": {
-          "max": 14.0,
-          "mean": 14.0,
+          "max": 17.0,
+          "mean": 15.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "common_file_features_zip_has_encrypted_entries": {
           "max": 0.0,
@@ -21820,27 +21836,27 @@
           "std": 0.0
         },
         "common_file_features_zip_max_entry_uncompressed_bytes": {
-          "max": 42760.0,
-          "mean": 42760.0,
+          "max": 438131.0,
+          "mean": 174550.33333333334,
           "min": 42760.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 186379.67678967098
         },
         "common_file_features_zip_uncompressed_bytes": {
-          "max": 75714.0,
-          "mean": 75714.0,
+          "max": 826262.0,
+          "mean": 325896.6666666667,
           "min": 75714.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 353811.7202706672
         },
         "common_metadata_extensions_extension_count": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_extensions_extension_high_execution_risk": {
@@ -21864,7 +21880,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_extensions_extension_known_executable": {
@@ -21880,7 +21896,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_extensions_extension_known_script": {
@@ -21901,11 +21917,11 @@
         },
         "common_metadata_extensions_extension_macro_enabled": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "common_metadata_extensions_extension_temporary": {
           "max": 0.0,
@@ -21920,7 +21936,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_extensions_has_double_extension_pattern": {
@@ -21976,7 +21992,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_file_type_is_socket": {
@@ -22069,19 +22085,19 @@
         },
         "common_metadata_filename_name_entropy": {
           "max": 3.736007,
-          "mean": 3.6986165,
-          "min": 3.661226,
+          "mean": 3.6579503333333334,
+          "min": 3.576618,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.03739049999999988
+          "nonzero": 3.0,
+          "std": 0.0651114983410935
         },
         "common_metadata_filename_name_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_metadata_filename_starts_with_dot": {
           "max": 0.0,
@@ -22093,18 +22109,18 @@
         },
         "common_metadata_filename_stem_length": {
           "max": 22.0,
-          "mean": 21.5,
-          "min": 21.0,
+          "mean": 19.0,
+          "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_metadata_filename_suffix_length": {
           "max": 5.0,
           "mean": 5.0,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_metadata_version": {
@@ -22112,7 +22128,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_ownership_gid": {
@@ -22128,7 +22144,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_ownership_uid": {
@@ -22141,27 +22157,27 @@
         },
         "common_metadata_path_basename_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "common_metadata_path_directory_depth": {
           "max": 7.0,
           "mean": 7.0,
           "min": 7.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_path_directory_length": {
-          "max": 58.0,
-          "mean": 56.5,
-          "min": 55.0,
+          "max": 54.0,
+          "mean": 53.0,
+          "min": 51.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "common_metadata_path_path_contains_control_characters": {
           "max": 0.0,
@@ -22192,7 +22208,7 @@
           "mean": 8.0,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_path_path_is_absolute": {
@@ -22200,16 +22216,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_path_path_length": {
-          "max": 85.0,
-          "mean": 84.0,
-          "min": 83.0,
+          "max": 81.0,
+          "mean": 78.0,
+          "min": 74.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 2.943920288775949
         },
         "common_metadata_path_path_was_truncated": {
           "max": 0.0,
@@ -22232,7 +22248,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_group_write": {
@@ -22240,7 +22256,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_is_executable": {
@@ -22256,7 +22272,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_mode": {
@@ -22264,7 +22280,7 @@
           "mean": 438.0,
           "min": 438.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_other_execute": {
@@ -22280,7 +22296,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_other_write": {
@@ -22288,7 +22304,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_owner_execute": {
@@ -22304,7 +22320,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_permissions_owner_write": {
@@ -22312,7 +22328,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_stat_device": {
@@ -22320,7 +22336,7 @@
           "mean": 1.3607163168552552e+19,
           "min": 1.3607163168552552e+19,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_stat_hard_link_count": {
@@ -22328,24 +22344,24 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "common_metadata_stat_inode": {
-          "max": 9.694279672891716e+18,
-          "mean": 4.849391636259549e+18,
-          "min": 4503599627382212.0,
+          "max": 9288674231463380.0,
+          "mean": 6286274479883107.0,
+          "min": 3940649673961090.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 4.844888036632166e+18
+          "nonzero": 3.0,
+          "std": 2232167356904524.2
         },
         "common_metadata_stat_size_bytes": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "common_metadata_symlink_follow_symlinks": {
           "max": 0.0,
@@ -22372,36 +22388,36 @@
           "std": 0.0
         },
         "common_metadata_timestamps_accessed_epoch": {
-          "max": 1788650600.576373,
-          "mean": 1788650600.1582916,
-          "min": 1788650599.74021,
+          "max": 1788888542.374123,
+          "mean": 1788888541.1918457,
+          "min": 1788888539.975666,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.41808152198791504
+          "nonzero": 3.0,
+          "std": 0.9794594023932421
         },
         "common_metadata_timestamps_changed_epoch": {
-          "max": 1788645636.015162,
-          "mean": 1788644939.3810155,
-          "min": 1788644242.746869,
+          "max": 1788888529.400123,
+          "mean": 1788809388.4661858,
+          "min": 1788651116.127317,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 696.6341464519501
+          "nonzero": 3.0,
+          "std": 111915.44415614796
         },
         "common_metadata_timestamps_created_epoch": {
-          "max": 1788645636.015162,
-          "mean": 1788644939.3810155,
-          "min": 1788644242.746869,
+          "max": 1788888529.400123,
+          "mean": 1788809388.4661858,
+          "min": 1788651116.127317,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 696.6341464519501
+          "nonzero": 3.0,
+          "std": 111915.44415614796
         },
         "common_metadata_timestamps_modified_epoch": {
           "max": 1788553335.321977,
-          "mean": 1788553333.5190468,
-          "min": 1788553331.716117,
+          "mean": 1788553332.5502274,
+          "min": 1788553330.612589,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.8029299974441528
+          "nonzero": 3.0,
+          "std": 2.0110344463758776
         },
         "derived_communication_capability_present": {
           "max": 0.0,
@@ -22416,7 +22432,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "derived_external_reference_and_url": {
@@ -22440,32 +22456,32 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "derived_large_compression_ratio_indicator": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "derived_macro_and_suspicious_content": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "derived_macro_present": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "derived_packed_or_encoded_indicator": {
           "max": 0.0,
@@ -22492,19 +22508,19 @@
           "std": 0.0
         },
         "derived_string_density": {
-          "max": 0.01057599363165975,
-          "mean": 0.01037779965909905,
+          "max": 0.01190638739452197,
+          "mean": 0.010887328904240023,
           "min": 0.010179605686538348,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.00019819397256070053
+          "nonzero": 3.0,
+          "std": 0.0007385305255353061
         },
         "derived_suspicious_content_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "derived_url_present": {
@@ -22516,35 +22532,35 @@
           "std": 0.0
         },
         "entropy_entropy": {
-          "max": 7.440297006587833,
-          "mean": 7.4292264640081305,
+          "max": 7.961382476917052,
+          "mean": 7.606611801644438,
           "min": 7.418155921428428,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.011070542579702192
+          "nonzero": 3.0,
+          "std": 0.2510235459580755
         },
         "entropy_high_entropy": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "entropy_very_high_entropy": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "file_extension_known": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "file_extension_length": {
@@ -22552,16 +22568,16 @@
           "mean": 5.0,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "file_extension_macro_enabled": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "file_filename_has_multiple_extensions": {
           "max": 0.0,
@@ -22573,26 +22589,26 @@
         },
         "file_filename_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "file_is_macro_enabled_extension": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "file_is_ooxml_extension": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "file_mime_type_known": {
@@ -22600,23 +22616,23 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "file_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "metadata_extension_length": {
           "max": 5.0,
           "mean": 5.0,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "metadata_filename_has_multiple_extensions": {
@@ -22637,27 +22653,27 @@
         },
         "metadata_filename_length": {
           "max": 27.0,
-          "mean": 26.5,
-          "min": 26.0,
+          "mean": 24.0,
+          "min": 19.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 3.559026084010437
         },
         "metadata_mime_type_known": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "metadata_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "office_embedded_objects_embedded_objects_7z_signature_count": {
           "max": 0.0,
@@ -22684,12 +22700,12 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_average_size": {
-          "max": 6622.8,
-          "mean": 6622.8,
+          "max": 62744.769231,
+          "mean": 25330.123077,
           "min": 6622.8,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 26456.15001118858
         },
         "office_embedded_objects_embedded_objects_cab_signature_count": {
           "max": 0.0,
@@ -22700,12 +22716,12 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_candidate_member_count": {
-          "max": 10.0,
-          "mean": 10.0,
+          "max": 13.0,
+          "mean": 11.0,
           "min": 10.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_embedded_objects_embedded_objects_control_count": {
           "max": 0.0,
@@ -22716,20 +22732,20 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_count": {
-          "max": 10.0,
-          "mean": 10.0,
+          "max": 13.0,
+          "mean": 11.0,
           "min": 10.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_embedded_objects_embedded_objects_document_count": {
-          "max": 10.0,
-          "mean": 10.0,
+          "max": 13.0,
+          "mean": 11.0,
           "min": 10.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_embedded_objects_embedded_objects_duplicate_hash_count": {
           "max": 0.0,
@@ -22900,12 +22916,12 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_maximum_size": {
-          "max": 42760.0,
-          "mean": 42760.0,
+          "max": 438131.0,
+          "mean": 174550.33333333334,
           "min": 42760.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 186379.67678967098
         },
         "office_embedded_objects_embedded_objects_office_document_count": {
           "max": 0.0,
@@ -22944,7 +22960,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_parse_success": {
@@ -22952,7 +22968,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_pdf_signature_count": {
@@ -23004,28 +23020,28 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_total_compressed_size": {
-          "max": 10486.0,
-          "mean": 10484.0,
+          "max": 32415.0,
+          "mean": 17794.333333333332,
           "min": 10482.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 2.0
+          "nonzero": 3.0,
+          "std": 10338.37267443748
         },
         "office_embedded_objects_embedded_objects_total_package_members": {
-          "max": 14.0,
-          "mean": 14.0,
+          "max": 17.0,
+          "mean": 15.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_embedded_objects_embedded_objects_total_uncompressed_size": {
-          "max": 66228.0,
-          "mean": 66228.0,
+          "max": 815682.0,
+          "mean": 316046.0,
           "min": 66228.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 353296.00372492184
         },
         "office_embedded_objects_embedded_objects_truncated_object_limit": {
           "max": 0.0,
@@ -23044,19 +23060,19 @@
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_unique_hash_count": {
-          "max": 10.0,
-          "mean": 10.0,
+          "max": 13.0,
+          "mean": 11.0,
           "min": 10.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_embedded_objects_embedded_objects_version": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_embedded_objects_embedded_objects_zip_signature_count": {
@@ -23072,16 +23088,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_macro_enabled_extension": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "office_office_features_office_activex_external_combination": {
           "max": 0.0,
@@ -23100,12 +23116,12 @@
           "std": 0.0
         },
         "office_office_features_office_compression_ratio": {
-          "max": 5.548032534622994,
-          "mean": 5.451125382649875,
+          "max": 23.861784156871806,
+          "mean": 11.58801164072385,
           "min": 5.354218230676755,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.09690715197311928
+          "nonzero": 3.0,
+          "std": 8.679228453793774
         },
         "office_office_features_office_control_relationship_count": {
           "max": 0.0,
@@ -23280,7 +23296,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_office_features_office_has_activex": {
@@ -23312,7 +23328,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_office_features_office_has_hyperlinks": {
@@ -23325,11 +23341,11 @@
         },
         "office_office_features_office_has_vba_project": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "office_office_features_office_has_xlm": {
           "max": 0.0,
@@ -23357,27 +23373,27 @@
         },
         "office_office_features_office_is_macro_enabled_extension": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "office_office_features_office_is_ooxml": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_office_features_office_macro_related_part_count": {
           "max": 2.0,
-          "mean": 2.0,
-          "min": 2.0,
+          "mean": 1.3333333333333333,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.9428090415820634
         },
         "office_office_features_office_network_relationship_count": {
           "max": 0.0,
@@ -23452,12 +23468,12 @@
           "std": 0.0
         },
         "office_office_features_office_part_count": {
-          "max": 14.0,
-          "mean": 14.0,
+          "max": 17.0,
+          "mean": 15.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_office_features_office_path_relationship_count": {
           "max": 0.0,
@@ -23468,12 +23484,12 @@
           "std": 0.0
         },
         "office_office_features_office_raw_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "office_office_features_office_relationship_count": {
           "max": 0.0,
@@ -23488,32 +23504,32 @@
           "mean": 3.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_office_features_office_static_corpus_size": {
-          "max": 68046.0,
-          "mean": 68046.0,
+          "max": 817953.0,
+          "mean": 318015.0,
           "min": 68046.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 353509.5499728402
         },
         "office_office_features_office_static_credential_indicator_count": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "office_office_features_office_static_download_indicator_count": {
           "max": 143.0,
-          "mean": 143.0,
-          "min": 143.0,
+          "mean": 125.33333333333333,
+          "min": 90.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 24.98443960192468
         },
         "office_office_features_office_static_dynamic_reference_indicator_count": {
           "max": 0.0,
@@ -23549,11 +23565,11 @@
         },
         "office_office_features_office_static_network_indicator_count": {
           "max": 143.0,
-          "mean": 143.0,
-          "min": 143.0,
+          "mean": 125.33333333333333,
+          "min": 90.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 24.98443960192468
         },
         "office_office_features_office_static_obfuscation_indicator_count": {
           "max": 0.0,
@@ -23572,20 +23588,20 @@
           "std": 0.0
         },
         "office_office_features_office_static_unique_keyword_count": {
-          "max": 636.0,
-          "mean": 636.0,
+          "max": 825.0,
+          "mean": 699.0,
           "min": 636.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 89.09545442950498
         },
         "office_office_features_office_static_url_count": {
           "max": 143.0,
-          "mean": 143.0,
-          "min": 143.0,
+          "mean": 125.33333333333333,
+          "min": 90.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 24.98443960192468
         },
         "office_office_features_office_static_windows_path_count": {
           "max": 0.0,
@@ -23596,20 +23612,20 @@
           "std": 0.0
         },
         "office_office_features_office_total_compressed_size": {
-          "max": 14141.0,
-          "mean": 13894.0,
+          "max": 34627.0,
+          "mean": 20805.0,
           "min": 13647.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9775.710443065847
         },
         "office_office_features_office_total_uncompressed_size": {
-          "max": 75714.0,
-          "mean": 75714.0,
+          "max": 826262.0,
+          "mean": 325896.6666666667,
           "min": 75714.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 353811.7202706672
         },
         "office_office_features_office_vba_external_combination": {
           "max": 0.0,
@@ -23740,12 +23756,12 @@
           "std": 0.0
         },
         "office_office_features_office_xml_part_count": {
-          "max": 13.0,
-          "mean": 13.0,
+          "max": 16.0,
+          "mean": 14.0,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "office_ole_marker_present": {
           "max": 0.0,
@@ -24008,7 +24024,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_ole_ole_windows_path_stream_count": {
@@ -24304,7 +24320,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_relationships_relationships_windows_path_target_count": {
@@ -24416,7 +24432,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_templates_template_parse_errors": {
@@ -24440,7 +24456,7 @@
           "mean": 3.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_templates_template_relationship_files_failed": {
@@ -24520,7 +24536,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_templates_template_zip_read_error": {
@@ -24533,11 +24549,11 @@
         },
         "office_vba_marker_present": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "office_xlm_xlm_credential_indicator_count": {
           "max": 0.0,
@@ -24680,7 +24696,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_xlm_xlm_is_spreadsheet_package": {
@@ -24784,7 +24800,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "office_xlm_xlm_very_hidden_sheet_count": {
@@ -24805,34 +24821,34 @@
         },
         "ooxml_ooxml_content_types_macro_enabled": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "ooxml_ooxml_content_types_macro_override_count": {
           "max": 1.0,
-          "mean": 1.0,
-          "min": 1.0,
+          "mean": 0.6666666666666666,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 0.4714045207910317
         },
         "ooxml_ooxml_content_types_override_count": {
-          "max": 9.0,
-          "mean": 9.0,
+          "max": 11.0,
+          "mean": 9.666666666666666,
           "min": 9.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "ooxml_ooxml_content_types_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_ooxml_document_paragraphs": {
@@ -24840,23 +24856,23 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_ooxml_document_text_characters": {
-          "max": 65.0,
-          "mean": 65.0,
+          "max": 69.0,
+          "mean": 66.33333333333333,
           "min": 65.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.8856180831641267
         },
         "ooxml_ooxml_document_xml_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_ooxml_relationships_attached_templates": {
@@ -24892,44 +24908,44 @@
           "std": 0.0
         },
         "ooxml_ooxml_relationships_total": {
-          "max": 10.0,
-          "mean": 10.0,
+          "max": 13.0,
+          "mean": 11.0,
           "min": 10.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "ooxml_zip_binary_parts": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_zip_compressed_size": {
-          "max": 14141.0,
-          "mean": 13894.0,
+          "max": 34627.0,
+          "mean": 20805.0,
           "min": 13647.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9775.710443065847
         },
         "ooxml_zip_compression_ratio": {
-          "max": 5.548032534622994,
-          "mean": 5.451125382649875,
+          "max": 23.861784156871806,
+          "mean": 11.58801164072385,
           "min": 5.354218230676755,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.09690715197311928
+          "nonzero": 3.0,
+          "std": 8.679228453793774
         },
         "ooxml_zip_entries": {
-          "max": 14.0,
-          "mean": 14.0,
+          "max": 17.0,
+          "mean": 15.0,
           "min": 14.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "ooxml_zip_error": {
           "max": 0.0,
@@ -24941,18 +24957,18 @@
         },
         "ooxml_zip_macro_parts": {
           "max": 3.0,
-          "mean": 3.0,
-          "min": 3.0,
+          "mean": 2.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 1.4142135623730951
         },
         "ooxml_zip_present": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_zip_suspicious_parts": {
@@ -24960,31 +24976,31 @@
           "mean": 3.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "ooxml_zip_uncompressed_size": {
-          "max": 75714.0,
-          "mean": 75714.0,
+          "max": 826262.0,
+          "mean": 325896.6666666667,
           "min": 75714.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 353811.7202706672
         },
         "ooxml_zip_xml_parts": {
-          "max": 13.0,
-          "mean": 13.0,
+          "max": 16.0,
+          "mean": 14.0,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.4142135623730951
         },
         "pipeline_analysis_count": {
           "max": 35.0,
           "mean": 35.0,
           "min": 35.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "pipeline_feature_sources": {
@@ -24992,16 +25008,16 @@
           "mean": 35.0,
           "min": 35.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "pipeline_nonzero_feature_count": {
-          "max": 397.0,
-          "mean": 390.5,
+          "max": 411.0,
+          "mean": 397.3333333333333,
           "min": 384.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 6.5
+          "nonzero": 3.0,
+          "std": 11.025223605694151
         },
         "pipeline_source_is_bytes": {
           "max": 0.0,
@@ -25016,24 +25032,24 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "pipeline_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "pipeline_total_feature_count": {
-          "max": 4319.0,
-          "mean": 4318.5,
+          "max": 4321.0,
+          "mean": 4319.333333333333,
           "min": 4318.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 1.247219128924647
         },
         "raw_text_ip_count": {
           "max": 0.0,
@@ -25172,12 +25188,12 @@
           "std": 0.0
         },
         "raw_text_text_length": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "raw_text_url_count": {
           "max": 0.0,
@@ -25188,20 +25204,20 @@
           "std": 0.0
         },
         "script_javascript_generic_script_identifier_count": {
-          "max": 474.0,
-          "mean": 441.5,
+          "max": 811.0,
+          "mean": 564.6666666666666,
           "min": 409.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 32.5
+          "nonzero": 3.0,
+          "std": 176.1937065340934
         },
         "script_javascript_generic_script_line_count": {
-          "max": 405.0,
-          "mean": 389.5,
+          "max": 1001.0,
+          "mean": 593.3333333333334,
           "min": 374.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 15.5
+          "nonzero": 3.0,
+          "std": 288.54154332127325
         },
         "script_javascript_generic_script_procedure_count": {
           "max": 0.0,
@@ -25216,24 +25232,24 @@
           "mean": 3.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_generic_script_string_count": {
-          "max": 90.0,
-          "mean": 84.5,
+          "max": 231.0,
+          "mean": 133.33333333333334,
           "min": 79.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 5.5
+          "nonzero": 3.0,
+          "std": 69.20661496963679
         },
         "script_javascript_generic_script_token_count": {
-          "max": 12407.0,
-          "mean": 12176.5,
+          "max": 22747.0,
+          "mean": 15700.0,
           "min": 11946.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 230.5
+          "nonzero": 3.0,
+          "std": 4986.534334251261
         },
         "script_javascript_generic_script_url_count": {
           "max": 0.0,
@@ -25261,11 +25277,11 @@
         },
         "script_javascript_javascript_average_line_length": {
           "max": 42.711229946524064,
-          "mean": 41.6617878127682,
-          "min": 40.61234567901234,
+          "mean": 39.05557748956442,
+          "min": 33.84315684315684,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0494421337558606
+          "nonzero": 3.0,
+          "std": 3.784030086069967
         },
         "script_javascript_javascript_base64_like_string_count": {
           "max": 0.0,
@@ -25276,12 +25292,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_brace_count": {
-          "max": 118.0,
-          "mean": 115.5,
+          "max": 272.0,
+          "mean": 167.66666666666666,
           "min": 113.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 2.5
+          "nonzero": 3.0,
+          "std": 73.80304118997326
         },
         "script_javascript_javascript_category_activex": {
           "max": 0.0,
@@ -25544,16 +25560,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_category_obfuscation_count": {
-          "max": 7.0,
-          "mean": 6.0,
+          "max": 8.0,
+          "mean": 6.666666666666667,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 1.247219128924647
         },
         "script_javascript_javascript_category_payload": {
           "max": 0.0,
@@ -25804,20 +25820,20 @@
           "std": 0.0
         },
         "script_javascript_javascript_comment_line_count": {
-          "max": 1.0,
-          "mean": 1.0,
+          "max": 5.0,
+          "mean": 2.3333333333333335,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.8856180831641267
         },
         "script_javascript_javascript_comment_ratio": {
-          "max": 0.00267379679144385,
-          "mean": 0.002571466296956493,
+          "max": 0.004995004995004995,
+          "mean": 0.0033793125296393265,
           "min": 0.0024691358024691358,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.00010233049448735718
+          "nonzero": 3.0,
+          "std": 0.0011455182632274848
         },
         "script_javascript_javascript_concatenation_count": {
           "max": 0.0,
@@ -25828,12 +25844,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_evidence_count": {
-          "max": 7.0,
-          "mean": 6.0,
+          "max": 8.0,
+          "mean": 6.666666666666667,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 1.247219128924647
         },
         "script_javascript_javascript_function_count": {
           "max": 0.0,
@@ -25888,7 +25904,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_has_persistence": {
@@ -25916,12 +25932,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_high_entropy_string_count": {
-          "max": 17.0,
-          "mean": 16.0,
+          "max": 41.0,
+          "mean": 24.333333333333332,
           "min": 15.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 11.8133634311129
         },
         "script_javascript_javascript_high_risk_indicator_count": {
           "max": 0.0,
@@ -25932,12 +25948,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_identifier_count": {
-          "max": 483.0,
-          "mean": 465.0,
+          "max": 916.0,
+          "mean": 615.3333333333334,
           "min": 447.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 18.0
+          "nonzero": 3.0,
+          "std": 213.11082145733994
         },
         "script_javascript_javascript_indicator_activex_adodb": {
           "max": 0.0,
@@ -26744,16 +26760,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_indicator_large_string_count": {
-          "max": 7.0,
-          "mean": 6.0,
+          "max": 8.0,
+          "mean": 6.666666666666667,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 1.247219128924647
         },
         "script_javascript_javascript_indicator_localstorage_access": {
           "max": 0.0,
@@ -27364,12 +27380,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_indicator_total": {
-          "max": 7.0,
-          "mean": 6.0,
+          "max": 8.0,
+          "mean": 6.666666666666667,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 1.247219128924647
         },
         "script_javascript_javascript_indicator_unescape": {
           "max": 0.0,
@@ -27628,12 +27644,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_line_count": {
-          "max": 405.0,
-          "mean": 389.5,
+          "max": 1001.0,
+          "mean": 593.3333333333334,
           "min": 374.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 15.5
+          "nonzero": 3.0,
+          "std": 288.54154332127325
         },
         "script_javascript_javascript_long_line_count": {
           "max": 0.0,
@@ -27644,20 +27660,20 @@
           "std": 0.0
         },
         "script_javascript_javascript_long_string_count": {
-          "max": 19.0,
-          "mean": 16.0,
+          "max": 39.0,
+          "mean": 23.666666666666668,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 3.0
+          "nonzero": 3.0,
+          "std": 11.115554667022044
         },
         "script_javascript_javascript_max_line_length": {
           "max": 591.0,
-          "mean": 591.0,
-          "min": 591.0,
+          "mean": 495.3333333333333,
+          "min": 304.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 135.2930974670261
         },
         "script_javascript_javascript_medium_or_higher_indicator_count": {
           "max": 0.0,
@@ -27668,12 +27684,12 @@
           "std": 0.0
         },
         "script_javascript_javascript_nonempty_line_count": {
-          "max": 399.0,
-          "mean": 385.0,
+          "max": 971.0,
+          "mean": 580.3333333333334,
           "min": 371.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 14.0
+          "nonzero": 3.0,
+          "std": 276.4794547319726
         },
         "script_javascript_javascript_percent_encoded_string_count": {
           "max": 0.0,
@@ -27688,7 +27704,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_present_combination_count": {
@@ -27704,7 +27720,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_schema_version": {
@@ -27712,56 +27728,56 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_javascript_javascript_semicolon_count": {
-          "max": 49.0,
-          "mean": 48.5,
+          "max": 116.0,
+          "mean": 71.0,
           "min": 48.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 31.822423959633664
         },
         "script_javascript_javascript_signal_score": {
-          "max": 25.19,
-          "mean": 22.520000000000003,
+          "max": 28.36,
+          "mean": 24.46666666666667,
           "min": 19.85,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 2.67
+          "nonzero": 3.0,
+          "std": 3.5116409586149633
         },
         "script_javascript_javascript_string_count": {
-          "max": 42.0,
-          "mean": 39.0,
+          "max": 114.0,
+          "mean": 64.0,
           "min": 36.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 3.0
+          "nonzero": 3.0,
+          "std": 35.4400902933387
         },
         "script_javascript_javascript_string_max_length": {
           "max": 1271.0,
-          "mean": 1211.5,
+          "mean": 1219.0,
           "min": 1152.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 59.5
+          "nonzero": 3.0,
+          "std": 49.72591544322404
         },
         "script_javascript_javascript_string_mean_length": {
           "max": 323.8333333333333,
-          "mean": 294.96428571428567,
-          "min": 266.0952380952381,
+          "mean": 269.5580618212197,
+          "min": 218.74561403508773,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 28.86904761904762
+          "nonzero": 3.0,
+          "std": 42.97170036155292
         },
         "script_javascript_javascript_string_total_length": {
-          "max": 11658.0,
-          "mean": 11417.0,
+          "max": 24937.0,
+          "mean": 15923.666666666666,
           "min": 11176.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 241.0
+          "nonzero": 3.0,
+          "std": 6376.426080145175
         },
         "script_javascript_javascript_url_count": {
           "max": 0.0,
@@ -28440,7 +28456,7 @@
           "mean": 15.0,
           "min": 15.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_powershell_powershell_combination_credential_dumping": {
@@ -28576,7 +28592,7 @@
           "mean": 2.0,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_powershell_powershell_evidence_count": {
@@ -29644,20 +29660,20 @@
           "std": 0.0
         },
         "script_powershell_powershell_line_count": {
-          "max": 405.0,
-          "mean": 389.5,
+          "max": 1001.0,
+          "mean": 593.3333333333334,
           "min": 374.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 15.5
+          "nonzero": 3.0,
+          "std": 288.54154332127325
         },
         "script_powershell_powershell_parameter_count": {
-          "max": 4.0,
-          "mean": 3.5,
+          "max": 17.0,
+          "mean": 8.0,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 6.377042156569663
         },
         "script_powershell_powershell_present_combination_count": {
           "max": 0.0,
@@ -29684,44 +29700,44 @@
           "std": 0.0
         },
         "script_powershell_powershell_source_size": {
-          "max": 29282.0,
-          "mean": 28852.0,
+          "max": 65346.0,
+          "mean": 41016.666666666664,
           "min": 28422.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 430.0
+          "nonzero": 3.0,
+          "std": 17207.018826307154
         },
         "script_powershell_powershell_string_count": {
-          "max": 40.0,
-          "mean": 35.0,
+          "max": 98.0,
+          "mean": 56.0,
           "min": 30.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 5.0
+          "nonzero": 3.0,
+          "std": 29.97776954122282
         },
         "script_powershell_powershell_string_max_length": {
-          "max": 1271.0,
-          "mean": 1251.5,
+          "max": 1600.0,
+          "mean": 1367.6666666666667,
           "min": 1232.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 19.5
+          "nonzero": 3.0,
+          "std": 165.05419985231788
         },
         "script_powershell_powershell_string_mean_entropy": {
           "max": 3.880491,
-          "mean": 3.819992,
-          "min": 3.759493,
+          "mean": 3.7916589999999997,
+          "min": 3.734993,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.06049900000000008
+          "nonzero": 3.0,
+          "std": 0.06360506095167807
         },
         "script_powershell_powershell_string_total_length": {
-          "max": 11417.0,
-          "mean": 10495.5,
+          "max": 22750.0,
+          "mean": 14580.333333333334,
           "min": 9574.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 921.5
+          "nonzero": 3.0,
+          "std": 5825.618841710199
         },
         "script_powershell_powershell_url_count": {
           "max": 0.0,
@@ -29732,12 +29748,12 @@
           "std": 0.0
         },
         "script_powershell_powershell_variable_count": {
-          "max": 4.0,
-          "mean": 4.0,
+          "max": 9.0,
+          "mean": 5.666666666666667,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.3570226039551585
         },
         "script_powershell_powershell_windows_path_count": {
           "max": 0.0,
@@ -29748,20 +29764,20 @@
           "std": 0.0
         },
         "script_vbscript_generic_script_identifier_count": {
-          "max": 474.0,
-          "mean": 441.5,
+          "max": 878.0,
+          "mean": 587.0,
           "min": 409.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 32.5
+          "nonzero": 3.0,
+          "std": 207.47208647590804
         },
         "script_vbscript_generic_script_line_count": {
-          "max": 405.0,
-          "mean": 389.5,
+          "max": 1001.0,
+          "mean": 593.3333333333334,
           "min": 374.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 15.5
+          "nonzero": 3.0,
+          "std": 288.54154332127325
         },
         "script_vbscript_generic_script_procedure_count": {
           "max": 0.0,
@@ -29773,27 +29789,27 @@
         },
         "script_vbscript_generic_script_signal_score": {
           "max": 3.0,
-          "mean": 3.0,
-          "min": 3.0,
+          "mean": 2.0,
+          "min": 0.0,
           "missing": 0.0,
           "nonzero": 2.0,
-          "std": 0.0
+          "std": 1.4142135623730951
         },
         "script_vbscript_generic_script_string_count": {
-          "max": 45.0,
-          "mean": 45.0,
+          "max": 120.0,
+          "mean": 70.0,
           "min": 45.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 35.35533905932738
         },
         "script_vbscript_generic_script_token_count": {
-          "max": 12407.0,
-          "mean": 12176.5,
+          "max": 25287.0,
+          "mean": 16546.666666666668,
           "min": 11946.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 230.5
+          "nonzero": 3.0,
+          "std": 6183.213853293088
         },
         "script_vbscript_generic_script_url_count": {
           "max": 0.0,
@@ -29812,20 +29828,20 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_ampersand_count": {
-          "max": 60.0,
-          "mean": 59.0,
+          "max": 117.0,
+          "mean": 78.33333333333333,
           "min": 58.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 27.35365098523819
         },
         "script_vbscript_vbscript_average_line_length": {
           "max": 42.711229946524064,
-          "mean": 41.6617878127682,
-          "min": 40.61234567901234,
+          "mean": 39.05557748956442,
+          "min": 33.84315684315684,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0494421337558606
+          "nonzero": 3.0,
+          "std": 3.784030086069967
         },
         "script_vbscript_vbscript_base64_like_string_count": {
           "max": 0.0,
@@ -29920,16 +29936,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_vbscript_vbscript_category_configuration_count": {
-          "max": 92.0,
-          "mean": 91.5,
+          "max": 262.0,
+          "mean": 148.33333333333334,
           "min": 91.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 80.37550760164581
         },
         "script_vbscript_vbscript_category_credential_access": {
           "max": 0.0,
@@ -30109,19 +30125,19 @@
         },
         "script_vbscript_vbscript_category_obfuscation": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_category_obfuscation_count": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_category_payload": {
           "max": 0.0,
@@ -30368,24 +30384,24 @@
           "mean": 3.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 2.0
+          "nonzero": 3.0,
+          "std": 1.632993161855452
         },
         "script_vbscript_vbscript_comment_ratio": {
           "max": 0.013368983957219251,
-          "mean": 0.007919059879844193,
+          "mean": 0.006278374252230461,
           "min": 0.0024691358024691358,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.005449924077375058
+          "nonzero": 3.0,
+          "std": 0.005018447331936255
         },
         "script_vbscript_vbscript_evidence_count": {
-          "max": 93.0,
-          "mean": 92.0,
+          "max": 262.0,
+          "mean": 148.66666666666666,
           "min": 91.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 80.14292787819078
         },
         "script_vbscript_vbscript_has_com": {
           "max": 0.0,
@@ -30429,11 +30445,11 @@
         },
         "script_vbscript_vbscript_has_obfuscation": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_has_persistence": {
           "max": 0.0,
@@ -30476,12 +30492,12 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_high_entropy_string_count": {
-          "max": 14.0,
-          "mean": 11.0,
+          "max": 22.0,
+          "mean": 14.666666666666666,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 3.0
+          "nonzero": 3.0,
+          "std": 5.734883511361751
         },
         "script_vbscript_vbscript_high_risk_indicator_count": {
           "max": 0.0,
@@ -30492,12 +30508,12 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_identifier_count": {
-          "max": 481.0,
-          "mean": 463.5,
+          "max": 911.0,
+          "mean": 612.6666666666666,
           "min": 446.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 17.5
+          "nonzero": 3.0,
+          "std": 211.43688314850735
         },
         "script_vbscript_vbscript_indicator_adodb_recordset": {
           "max": 0.0,
@@ -31317,26 +31333,26 @@
         },
         "script_vbscript_vbscript_indicator_large_string": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_indicator_large_string_count": {
           "max": 1.0,
-          "mean": 0.5,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
           "nonzero": 1.0,
-          "std": 0.5
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_indicator_long_line": {
           "max": 1.0,
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_vbscript_vbscript_indicator_long_line_count": {
@@ -31344,8 +31360,8 @@
           "mean": 6.0,
           "min": 5.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 0.816496580927726
         },
         "script_vbscript_vbscript_indicator_mshta": {
           "max": 0.0,
@@ -31880,24 +31896,24 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_vbscript_vbscript_indicator_token_density_count": {
-          "max": 87.0,
-          "mean": 85.5,
+          "max": 256.0,
+          "mean": 142.33333333333334,
           "min": 84.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.5
+          "nonzero": 3.0,
+          "std": 80.38380157441892
         },
         "script_vbscript_vbscript_indicator_total": {
-          "max": 93.0,
-          "mean": 92.0,
+          "max": 262.0,
+          "mean": 148.66666666666666,
           "min": 91.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 80.14292787819078
         },
         "script_vbscript_vbscript_indicator_unicode_escape": {
           "max": 0.0,
@@ -32236,12 +32252,12 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_line_count": {
-          "max": 405.0,
-          "mean": 389.5,
+          "max": 1001.0,
+          "mean": 593.3333333333334,
           "min": 374.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 15.5
+          "nonzero": 3.0,
+          "std": 288.54154332127325
         },
         "script_vbscript_vbscript_long_line_count": {
           "max": 0.0,
@@ -32252,20 +32268,20 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_long_string_count": {
-          "max": 12.0,
-          "mean": 10.0,
+          "max": 21.0,
+          "mean": 13.666666666666666,
           "min": 8.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 2.0
+          "nonzero": 3.0,
+          "std": 5.436502143433364
         },
         "script_vbscript_vbscript_max_line_length": {
           "max": 591.0,
-          "mean": 591.0,
-          "min": 591.0,
+          "mean": 495.3333333333333,
+          "min": 304.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 135.2930974670261
         },
         "script_vbscript_vbscript_medium_or_higher_indicator_count": {
           "max": 0.0,
@@ -32276,12 +32292,12 @@
           "std": 0.0
         },
         "script_vbscript_vbscript_nonempty_line_count": {
-          "max": 399.0,
-          "mean": 385.0,
+          "max": 971.0,
+          "mean": 580.3333333333334,
           "min": 371.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 14.0
+          "nonzero": 3.0,
+          "std": 276.4794547319726
         },
         "script_vbscript_vbscript_object_count": {
           "max": 0.0,
@@ -32301,11 +32317,11 @@
         },
         "script_vbscript_vbscript_present_category_count": {
           "max": 2.0,
-          "mean": 1.5,
+          "mean": 1.3333333333333333,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_present_combination_count": {
           "max": 0.0,
@@ -32317,11 +32333,11 @@
         },
         "script_vbscript_vbscript_present_indicator_count": {
           "max": 3.0,
-          "mean": 2.5,
+          "mean": 2.3333333333333335,
           "min": 2.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.5
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "script_vbscript_vbscript_procedure_count": {
           "max": 0.0,
@@ -32336,48 +32352,48 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "script_vbscript_vbscript_signal_score": {
-          "max": 22.27,
-          "mean": 18.865000000000002,
+          "max": 30.41,
+          "mean": 22.713333333333335,
           "min": 15.46,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 3.4049999999999994
+          "nonzero": 3.0,
+          "std": 6.111357368775686
         },
         "script_vbscript_vbscript_string_count": {
-          "max": 25.0,
-          "mean": 24.0,
+          "max": 71.0,
+          "mean": 39.666666666666664,
           "min": 23.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 1.0
+          "nonzero": 3.0,
+          "std": 22.17105219775452
         },
         "script_vbscript_vbscript_string_max_length": {
-          "max": 1232.0,
-          "mean": 1048.5,
+          "max": 1421.0,
+          "mean": 1172.6666666666667,
           "min": 865.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 183.5
+          "nonzero": 3.0,
+          "std": 230.83086641281076
         },
         "script_vbscript_vbscript_string_mean_length": {
           "max": 349.5217391304348,
-          "mean": 299.5608695652174,
-          "min": 249.6,
+          "mean": 263.09691773831395,
+          "min": 190.16901408450704,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 49.96086956521741
+          "nonzero": 3.0,
+          "std": 65.75179508939597
         },
         "script_vbscript_vbscript_string_total_length": {
-          "max": 8039.0,
-          "mean": 7139.5,
+          "max": 13502.0,
+          "mean": 9260.333333333334,
           "min": 6240.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 899.5
+          "nonzero": 3.0,
+          "std": 3087.922962481775
         },
         "script_vbscript_vbscript_url_count": {
           "max": 0.0,
@@ -32396,12 +32412,12 @@
           "std": 0.0
         },
         "strings_ascii_string_count": {
-          "max": 186.0,
-          "mean": 180.0,
+          "max": 436.0,
+          "mean": 265.3333333333333,
           "min": 174.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 6.0
+          "nonzero": 3.0,
+          "std": 120.77895328059255
         },
         "strings_ip_count": {
           "max": 0.0,
@@ -32412,20 +32428,20 @@
           "std": 0.0
         },
         "strings_printable_ratio": {
-          "max": 0.34070620344572694,
-          "mean": 0.3376730572602179,
+          "max": 0.37379502444086404,
+          "mean": 0.34971371298709997,
           "min": 0.3346399110747089,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0030331461855090114
+          "nonzero": 3.0,
+          "std": 0.01720721063551672
         },
         "strings_text_length": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "strings_unicode_string_count": {
           "max": 0.0,
@@ -32500,20 +32516,20 @@
           "std": 0.0
         },
         "urls_url_features_average_entropy": {
-          "max": 3.3168239999999996,
-          "mean": 3.3168239999999996,
+          "max": 3.336583870967742,
+          "mean": 3.3234106236559136,
           "min": 3.3168239999999996,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.009314892504441251
         },
         "urls_url_features_average_host_length": {
-          "max": 13.0,
-          "mean": 13.0,
+          "max": 13.290322580645162,
+          "mean": 13.096774193548386,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.1368593770038482
         },
         "urls_url_features_average_path_components": {
           "max": 0.0,
@@ -32532,20 +32548,20 @@
           "std": 0.0
         },
         "urls_url_features_average_url_length": {
-          "max": 13.0,
-          "mean": 13.0,
+          "max": 13.290322580645162,
+          "mean": 13.096774193548386,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.1368593770038482
         },
         "urls_url_features_category_count": {
-          "max": 3.0,
-          "mean": 3.0,
+          "max": 4.0,
+          "mean": 3.3333333333333335,
           "min": 3.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "urls_url_features_category_count_archive_or_payload": {
           "max": 0.0,
@@ -32596,12 +32612,12 @@
           "std": 0.0
         },
         "urls_url_features_category_count_domain": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "urls_url_features_category_count_download": {
           "max": 0.0,
@@ -32612,12 +32628,12 @@
           "std": 0.0
         },
         "urls_url_features_category_count_dynamic_host": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_category_count_dynamic_path": {
           "max": 0.0,
@@ -32768,7 +32784,7 @@
           "mean": 4.0,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_category_count_port": {
@@ -32820,12 +32836,12 @@
           "std": 0.0
         },
         "urls_url_features_category_count_scheme": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "urls_url_features_category_count_shortener": {
           "max": 0.0,
@@ -32944,7 +32960,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_category_present_download": {
@@ -32956,12 +32972,12 @@
           "std": 0.0
         },
         "urls_url_features_category_present_dynamic_host": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "urls_url_features_category_present_dynamic_path": {
           "max": 0.0,
@@ -33112,7 +33128,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_category_present_port": {
@@ -33168,7 +33184,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_category_present_shortener": {
@@ -33256,7 +33272,7 @@
           "mean": 13.0,
           "min": 13.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_combination_present_active_content_delivery": {
@@ -33400,16 +33416,16 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_detect_count": {
-          "max": 4.0,
-          "mean": 4.0,
+          "max": 6.0,
+          "mean": 4.666666666666667,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_document_count": {
           "max": 0.0,
@@ -33420,12 +33436,12 @@
           "std": 0.0
         },
         "urls_url_features_domain_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 29.0,
+          "mean": 26.333333333333332,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 1.8856180831641267
         },
         "urls_url_features_download_count": {
           "max": 0.0,
@@ -33452,12 +33468,12 @@
           "std": 0.0
         },
         "urls_url_features_evidence_count": {
-          "max": 4.0,
-          "mean": 4.0,
+          "max": 6.0,
+          "mean": 4.666666666666667,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_execute_count": {
           "max": 0.0,
@@ -33508,12 +33524,12 @@
           "std": 0.0
         },
         "urls_url_features_indicator_count": {
-          "max": 1.0,
-          "mean": 1.0,
+          "max": 2.0,
+          "mean": 1.3333333333333333,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.4714045207910317
         },
         "urls_url_features_indicator_count_active_content_extension": {
           "max": 0.0,
@@ -33828,12 +33844,12 @@
           "std": 0.0
         },
         "urls_url_features_indicator_count_randomized_host_label": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 2.0,
+          "mean": 0.6666666666666666,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_indicator_count_redirect_parameter": {
           "max": 0.0,
@@ -33848,7 +33864,7 @@
           "mean": 4.0,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_indicator_count_tracking_parameter": {
@@ -34204,12 +34220,12 @@
           "std": 0.0
         },
         "urls_url_features_indicator_present_randomized_host_label": {
-          "max": 0.0,
-          "mean": 0.0,
+          "max": 1.0,
+          "mean": 0.3333333333333333,
           "min": 0.0,
           "missing": 0.0,
-          "nonzero": 0.0,
-          "std": 0.0
+          "nonzero": 1.0,
+          "std": 0.4714045207910317
         },
         "urls_url_features_indicator_present_redirect_parameter": {
           "max": 0.0,
@@ -34224,7 +34240,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_indicator_present_tracking_parameter": {
@@ -34373,19 +34389,19 @@
         },
         "urls_url_features_maximum_entropy": {
           "max": 3.9161,
-          "mean": 3.9161,
-          "min": 3.9161,
+          "mean": 3.9024,
+          "min": 3.875,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.019374725804511467
         },
         "urls_url_features_maximum_host_length": {
-          "max": 21.0,
-          "mean": 21.0,
+          "max": 23.0,
+          "mean": 21.666666666666668,
           "min": 21.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_maximum_path_components": {
           "max": 0.0,
@@ -34404,12 +34420,12 @@
           "std": 0.0
         },
         "urls_url_features_maximum_url_length": {
-          "max": 21.0,
-          "mean": 21.0,
+          "max": 23.0,
+          "mean": 21.666666666666668,
           "min": 21.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 0.9428090415820634
         },
         "urls_url_features_nested_url_count": {
           "max": 0.0,
@@ -34440,7 +34456,7 @@
           "mean": 4.0,
           "min": 4.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_private_ip_count": {
@@ -34468,12 +34484,12 @@
           "std": 0.0
         },
         "urls_url_features_record_count": {
-          "max": 25.0,
-          "mean": 25.0,
+          "max": 31.0,
+          "mean": 27.0,
           "min": 25.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 0.0
+          "nonzero": 3.0,
+          "std": 2.8284271247461903
         },
         "urls_url_features_redirect_count": {
           "max": 0.0,
@@ -34496,7 +34512,7 @@
           "mean": 1.0,
           "min": 1.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_shortener_count": {
@@ -34512,16 +34528,16 @@
           "mean": 32.0,
           "min": 32.0,
           "missing": 0.0,
-          "nonzero": 2.0,
+          "nonzero": 3.0,
           "std": 0.0
         },
         "urls_url_features_source_size": {
-          "max": 17587.0,
-          "mean": 17340.0,
+          "max": 36619.0,
+          "mean": 23766.333333333332,
           "min": 17093.0,
           "missing": 0.0,
-          "nonzero": 2.0,
-          "std": 247.0
+          "nonzero": 3.0,
+          "std": 9090.445142504788
         },
         "urls_url_features_suspicious_extension_count": {
           "max": 0.0,
@@ -34588,35 +34604,35 @@
           "std": 0.0
         }
       },
-      "labeled_count": 2,
-      "malicious_count": 1,
+      "labeled_count": 3,
+      "malicious_count": 2,
       "missing_feature_values": 0,
-      "nonzero_feature_values": 785,
-      "positive_rate": 0.5,
-      "record_count": 2,
+      "nonzero_feature_values": 1198,
+      "positive_rate": 0.6666666666666666,
+      "record_count": 3,
       "unlabeled_count": 0
     }
   },
   "extraction": {
     "benign": 1,
-    "discovered": 2,
+    "discovered": 3,
     "duplicate_hashes": 0,
     "duplicate_sample_ids": 0,
-    "elapsed_seconds": 1.855617,
+    "elapsed_seconds": 5.021878,
     "failed": 0,
-    "finished_at": "2026-09-05T23:23:21.344297+00:00",
-    "malicious": 1,
+    "finished_at": "2026-09-08T17:29:04.578625+00:00",
+    "malicious": 2,
     "other_labels": 0,
-    "processed": 2,
-    "selected": 2,
+    "processed": 3,
+    "selected": 3,
     "skipped": 0,
-    "started_at": "2026-09-05T23:23:19.488680+00:00",
-    "successful": 2,
-    "successful_bytes": 34680,
-    "total_bytes": 34680
+    "started_at": "2026-09-08T17:28:59.556747+00:00",
+    "successful": 3,
+    "successful_bytes": 71299,
+    "total_bytes": 71299
   },
   "failures": [],
-  "generated_at": "2026-09-05T23:23:21.594091+00:00",
+  "generated_at": "2026-09-08T17:29:05.062022+00:00",
   "identity": {
     "content_hash_algorithm": "sha256",
     "path_independent": true,
@@ -34624,7 +34640,7 @@
   },
   "manifest_version": "1.1",
   "module": "pharos_cdr.scripts.extract_dataset",
-  "script_version": "1.2.0",
+  "script_version": "1.3.0",
   "supported_extensions": [
     ".bat",
     ".cmd",

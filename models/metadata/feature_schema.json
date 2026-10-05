@@ -13157,6 +13157,20 @@
       "default": 0.0,
       "description": "",
       "dtype": "float64",
+      "name": "capabilities_communication_indicator_c2",
+      "source": ""
+    },
+    {
+      "default": 0.0,
+      "description": "",
+      "dtype": "float64",
+      "name": "capabilities_communication_indicator_cloud_storage",
+      "source": ""
+    },
+    {
+      "default": 0.0,
+      "description": "",
+      "dtype": "float64",
       "name": "capabilities_communication_indicator_count",
       "source": ""
     },
