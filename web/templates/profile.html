@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}User Profile{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+  <!-- Optional hero/banner – replace the background-image URL with your own asset -->
+  <div class="profile-hero" style="background-image:url('/static/img/hero.jpg');">
+    <h1 class="hero-title">My Profile</h1>
+  </div>
+
+  <div class="profile-card">
+    <!-- Large avatar with teal accent -->
+    <div class="avatar-large">
+      {{ user.username[0]|upper }}
+    </div>
+
+    <form method="post" action="{{ url_for('profile') }}" class="profile-form">
+      <!-- Personal Information section -->
+      <section class="card-section">
+        <h2 class="section-title">Personal Information</h2>
+        <div class="field-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="form-input" value="{{ user.username }}" required />
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-input" value="{{ user.email }}" required />
+        </div>
+      </section>
+
+      <!-- Security section -->
+      <section class="card-section">
+        <h2 class="section-title">Security</h2>
+        <div class="field-group">
+          <label for="password">New Password (optional)</label>
+          <input type="password" id="password" name="password" class="form-input" placeholder="Leave blank to keep current" />
+        </div>
+      </section>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

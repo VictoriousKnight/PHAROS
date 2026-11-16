@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - PHAROS CDR{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 2.25rem;">
+  <h1 style="font-size: 1.85rem; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 0.35rem;">
+    Document Security & Reconstruction
+  </h1>
+  <p style="color: var(--text-secondary); font-size: 0.95rem;">
+    Zero-trust Content Disarm and Reconstruction. Deconstructs documents in-memory, purges active threats, and rebuilds clean files.
+  </p>
+</div>
+
+<!-- Upload Dropzone Panel -->
+<div id="upload-panel">
+  <div class="dropzone" id="dropzone">
+    <input type="file" id="file-input" accept=".docx,.docm,.doc" style="display: none;">
+    <svg class="dropzone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+      <polyline points="17 8 12 3 7 8"></polyline>
+      <line x1="12" y1="3" x2="12" y2="15"></line>
+    </svg>
+    <div class="dropzone-title">Click to upload or drag and drop document</div>
+    <div class="dropzone-desc">Document bytes are processed defensively in an isolated in-memory buffer.</div>
+
+    <div class="formats-pill">
+      <span class="format-badge">.DOCX</span>
+      <span class="format-badge">.DOCM</span>
+      <span class="format-badge">.DOC</span>
+    </div>
+  </div>
+</div>
+
+<!-- Organic Mesmerizing Processing Animation Panel -->
+<div id="processing-panel" class="processing-panel card">
+  <div class="orb-container">
+    <div class="orb-halo"></div>
+    <div class="orb-ring"></div>
+    <div class="orb-ring-inner"></div>
+    <div class="orb-core">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+    </div>
+  </div>
+
+  <div class="processing-stage shimmer-text" id="processing-stage-text">
+    Deconstructing package architecture...
+  </div>
+  <div class="processing-filename" id="processing-filename-text">
+    document.docx
+  </div>
+</div>
+
+<!-- Recent Scans History Table -->
+{% if recent_scans %}
+<div style="margin-top: 3.5rem;">
+  <h2 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary);">
+    Your Recent Analysis History
+  </h2>
+  <div class="card" style="padding: 0; overflow: hidden;">
+    <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid var(--border-subtle); background: var(--bg-subtle); color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.05em;">
+          <th style="padding: 0.85rem 1.25rem;">File Name</th>
+          <th style="padding: 0.85rem 1.25rem;">Verdict</th>
+          <th style="padding: 0.85rem 1.25rem;">Risk Score</th>
+          <th style="padding: 0.85rem 1.25rem;">Date</th>
+          <th style="padding: 0.85rem 1.25rem; text-align: right;">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for scan in recent_scans %}
+        <tr style="border-bottom: 1px solid var(--border-subtle);">
+          <td style="padding: 0.95rem 1.25rem; font-family: var(--font-mono); font-weight: 500;">
+            {{ scan.file_name }}
+          </td>
+          <td style="padding: 0.95rem 1.25rem;">
+            {% if scan.verdict == 'pass' %}
+              <span class="verdict-badge verdict-clean" style="padding: 0.2rem 0.55rem; font-size: 0.75rem;">Clean</span>
+            {% elif scan.verdict == 'sanitize' %}
+              <span class="verdict-badge verdict-sanitized" style="padding: 0.2rem 0.55rem; font-size: 0.75rem;">Sanitized</span>
+            {% else %}
+              <span class="verdict-badge verdict-rejected" style="padding: 0.2rem 0.55rem; font-size: 0.75rem;">Blocked</span>
+            {% endif %}
+          </td>
+          <td style="padding: 0.95rem 1.25rem; font-family: var(--font-mono); font-weight: 600;">
+            {{ "%.1f"|format(scan.risk_score * 100) }}%
+          </td>
+          <td style="padding: 0.95rem 1.25rem; color: var(--text-muted);">
+            {{ scan.created_at[:10] }}
+          </td>
+          <td style="padding: 0.95rem 1.25rem; text-align: right;">
+            <a href="/report/{{ scan.scan_id }}" class="btn btn-outline" style="padding: 0.3rem 0.75rem; font-size: 0.8rem;">
+              View Intelligence
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endif %}
+
+<script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+{% endblock %}

@@ -5,8 +5,22 @@ __pycache__/
 .venv/
 venv/
 
-# Environment
+# Environment & secrets – NEVER commit these
 .env
+.env.*
+*.secret
+
+# SQLite database (contains real user data)
+user_database/
+*.db
+*.sqlite3
+
+# Uploaded / sanitized files (can be large and contain malware samples)
+outputs/sanitized/*
+outputs/reports/*
+outputs/plots/*
+uploads/
+tmp/
 
 # Data
 data/raw/*
@@ -17,11 +31,17 @@ data/samples/*
 !data/samples/benign/
 !data/samples/suspicious/
 
-# Generated outputs
-outputs/sanitized/*
-outputs/reports/*
-outputs/plots/*
-
 # Trained models
 models/trained/*
 !models/trained/.gitkeep
+
+# Ollama / LLM artefacts
+*.modelfile
+*.gguf
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
