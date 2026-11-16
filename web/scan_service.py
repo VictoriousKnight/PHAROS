@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any, Mapping, Optional
 
 from src.pipeline.scanner import ScanConfig, scan_bytes
+from src.sandbox import run_sandboxed_scan, SandboxSecurityViolation
 from src.ml.utils import flatten_prediction
 from src.ml.llm import generate_brief
 from web.db import record_scan
@@ -70,29 +71,41 @@ def _process_scan_task(
             include_llm_context=True,
         )
 
-        _JOB_STATUS[scan_id]["stage"] = "Extracting 40 structural threat indicators & running ML..."
+        _JOB_STATUS[scan_id]["stage"] = "Executing static analysis within isolated security sandbox..."
         _JOB_STATUS[scan_id]["percent"] = 50
 
-        scan_result = scan_bytes(file_bytes, file_name=file_name, config=cfg)
+        # Execute inside defensive sandbox (process boundary, decompression bomb guard, timeout limit)
+        raw_dict, sanitized_content, verdict_str, risk_score, sanitized_sha256, orig_sha256 = run_sandboxed_scan(
+            file_bytes=file_bytes,
+            file_name=file_name,
+            scanner_config={
+                "run_ml": True,
+                "run_cdr_detection": True,
+                "run_policy": True,
+                "sanitize": True,
+                "verify_sanitized": True,
+                "include_llm_context": True,
+            }
+        )
 
         _JOB_STATUS[scan_id]["stage"] = "Neutralizing active elements & reconstructing package..."
         _JOB_STATUS[scan_id]["percent"] = 80
 
         # Save sanitized file to storage if generated
         sanitized_path_str = None
-        if scan_result.sanitized_content:
+        if sanitized_content:
             # Normalize extension to .docx for sanitized clean deliverables
             base_stem = Path(file_name).stem
             clean_filename = f"{base_stem}_clean_{scan_id[:8]}.docx"
             target_path = SANITIZED_STORAGE / clean_filename
-            target_path.write_bytes(scan_result.sanitized_content)
+            target_path.write_bytes(sanitized_content)
             sanitized_path_str = str(target_path)
 
         # -----------------------------------------------------------------
         # 1️⃣ Gather raw scanner output and flatten ML prediction
         # -----------------------------------------------------------------
-        raw_dict = scan_result.to_dict()
-        ml_flat = flatten_prediction(scan_result.prediction)
+        prediction_data = raw_dict.get("prediction")
+        ml_flat = flatten_prediction(prediction_data) if prediction_data else {}
 
         # -----------------------------------------------------------------
         # 2️⃣ Ask the LLM for a human‑readable executive brief (optional)
@@ -118,10 +131,10 @@ def _process_scan_task(
             scan_id=scan_id,
             user_id=user_id,
             file_name=file_name,
-            original_sha256=scan_result.input.sha256,
-            clean_sha256=scan_result.sanitized_sha256,
-            verdict=scan_result.verdict.value,
-            risk_score=scan_result.decision.score,
+            original_sha256=orig_sha256,
+            clean_sha256=sanitized_sha256,
+            verdict=verdict_str,
+            risk_score=risk_score,
             sanitized_file_path=sanitized_path_str,
             summary_json=json.dumps(res_dict),
         )

@@ -29,6 +29,7 @@ from src.ingestion.file_type import identify_from_bytes
 from src.ml.explain import explain_prediction
 from src.ml.predict import predict
 from src.pipeline.decision import DecisionResult, make_decision
+from src.sandbox import validate_archive_safety
 
 logger = logging.getLogger("pipeline.scanner")
 
@@ -130,6 +131,9 @@ def scan_bytes(
     sha256 = hashlib.sha256(data).hexdigest()
     scan_id = f"scan_{uuid.uuid4().hex[:12]}"
     inp = ScanInput(content=data, source_name=file_name, sha256=sha256, size=len(data))
+
+    # Pre-analysis sandbox safety check (guard against zip bombs and zip-slip path traversal)
+    validate_archive_safety(data)
 
     # Stage 1: Feature Extraction
     extracted_features: dict[str, Any] = {}

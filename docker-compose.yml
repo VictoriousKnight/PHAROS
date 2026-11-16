@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  pharos:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pharos-security-sandbox
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - PHAROS_SECRET_KEY=${PHAROS_SECRET_KEY:-pharos-default-secret-key-prod}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    # Security sandbox boundaries
+    cap_drop:
+      - ALL
+    read_only: false
+    security_opt:
+      - no-new-privileges:true
+    pids_limit: 100
+    mem_limit: 1g
+    cpus: 1.5
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=128m
+    volumes:
+      - pharos_data:/app/user_database
+      - pharos_sanitized:/app/outputs/sanitized
+    restart: unless-stopped
+
+volumes:
+  pharos_data:
+  pharos_sanitized:

@@ -4,75 +4,88 @@ Provides `generate_brief` which receives the scanner dict and returns a
 structured JSON payload for the UI.
 """
 
+from __future__ import annotations
 import os
-from google import genai
+import re
+import json
+import subprocess
+import logging
+from typing import Mapping, Any
+
+logger = logging.getLogger("ml.llm")
+
+
+def _run_ollama_prompt(prompt: str, model: str = None) -> str:
+    """Execute the Ollama CLI synchronously and return stdout.
+
+    The binary must be on the system PATH. A timeout of 30 seconds is used.
+    """
+    model_name = model or os.environ.get("OLLAMA_MODEL", "pharos-llm")
+    result = subprocess.run(
+        ["ollama", "run", model_name],
+        input=prompt.encode("utf-8"),
+        capture_output=True,
+        check=True,
+        timeout=30,
+    )
+    return result.stdout.decode("utf-8").strip()
+
+
+def generate_brief(scan_dict: Mapping[str, Any]) -> dict[str, Any]:
+    """Ask the local Llama 3.1 model to produce an executive brief.
+
+    The LLM is instructed to return **only** a JSON object with the two keys
+    ``summary_rationale`` and ``top_contributions`` (a list of feature ->
+    description).  If parsing fails we fall back to a placeholder so the UI
+    does not break.
+    """
+    prompt = (
+        "You are a security analyst. Examine the following scan result (JSON) and produce a concise executive brief.\n\n"
+        f"{json.dumps(scan_dict, indent=2)}\n\n"
+        "Return **exactly** a JSON object with a single key:\n"
+        '  "summary_rationale": "<one‑sentence overall assessment>"\n'
+        "Do NOT add any extra text or fields."
+    )
+
+    try:
+        raw = _run_ollama_prompt(prompt)
+        # Parse JSON directly or extract first JSON object if surrounded by markdown fences
+        try:
+            return json.loads(raw)
+        except json.JSONDecodeError:
+            match = re.search(r"\{.*\}", raw, re.DOTALL)
+            if match:
+                return json.loads(match.group(0))
+            return {
+                "summary_rationale": raw,
+                "top_contributions": [],
+            }
+    except Exception as exc:  # noqa: BLE001 – we deliberately swallow all errors.
+        logger.warning("LLM brief generation failed: %s", exc)
+        return {
+            "summary_rationale": "LLM integration unavailable. Ensure Ollama service is active.",
+            "top_contributions": [],
+        }
+
 
 # Gemini option
 
+# import os
+# from google import genai
 
-def generate_brief(summary_dict: dict) -> str | None:
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        return None
-    client = genai.Client(api_key=api_key)
-    prompt = (
-        "You are a security analyst. Given these document scan results, "
-        "write a concise 2-3 sentence threat summary:\n\n"
-        f"{summary_dict}"
-    )
-    response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
-    return response.text
+
+# def generate_brief(summary_dict: dict) -> str | None:
+#     api_key = os.environ.get("GEMINI_API_KEY")
+#     if not api_key:
+#         return None
+#     client = genai.Client(api_key=api_key)
+#     prompt = (
+#         "You are a security analyst. Given these document scan results, "
+#         "write a concise 2-3 sentence threat summary:\n\n"
+#         f"{summary_dict}"
+#     )
+#     response = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
+#     return response.text
 
 
 # Ollama option
-
-# from __future__ import annotations
-# import json
-# import subprocess
-# import logging
-# from typing import Mapping, Any
-
-# logger = logging.getLogger("ml.llm")
-
-
-# def _run_ollama_prompt(prompt: str, model: str = "pharos-llm:latest") -> str:
-#     """Execute the Ollama CLI synchronously and return stdout.
-
-#     The binary must be on the system PATH.  A timeout of 30 seconds is used.
-#     Any subprocess error is propagated to the caller.
-#     """
-#     result = subprocess.run(
-#         ["ollama", "run", model],
-#         input=prompt.encode("utf-8"),
-#         capture_output=True,
-#         check=True,
-#         timeout=30,
-#     )
-#     return result.stdout.decode("utf-8").strip()
-
-
-# def generate_brief(scan_dict: Mapping[str, Any]) -> dict[str, Any]:
-#     """Ask the local Llama 3.1 model to produce an executive brief.
-
-#     The LLM is instructed to return **only** a JSON object with the two keys
-#     ``summary_rationale`` and ``top_contributions`` (a list of feature ->
-#     description).  If parsing fails we fall back to a placeholder so the UI
-#     does not break.
-#     """
-#     prompt = (
-#     "You are a security analyst. Examine the following scan result (JSON) and produce a concise executive brief.\n\n"
-#     f"{json.dumps(scan_dict, indent=2)}\n\n"
-#     "Return **exactly** a JSON object with a single key:\n"
-#     "  \"summary_rationale\": \"<one‑sentence overall assessment>\"\n"
-#     "Do NOT add any extra text or fields."
-# )
-
-#     try:
-#         raw = _run_ollama_prompt(prompt)
-#         return json.loads(raw)
-#     except Exception as exc:  # noqa: BLE001 – we deliberately swallow all errors.
-#         logger.warning("LLM brief generation failed: %s", exc)
-#         return {
-#             "summary_rationale": "LLM integration unavailable.",
-#             "top_contributions": [],
-#         }
