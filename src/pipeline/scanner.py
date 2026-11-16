@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import hashlib
 import logging
+import tempfile
 import uuid
 from dataclasses import dataclass, field
 from enum import Enum
@@ -130,6 +131,7 @@ def scan_bytes(
 
     sha256 = hashlib.sha256(data).hexdigest()
     scan_id = f"scan_{uuid.uuid4().hex[:12]}"
+    logger.info("Starting scan", extra={"scan_id": scan_id})
     inp = ScanInput(content=data, source_name=file_name, sha256=sha256, size=len(data))
 
     # Pre-analysis sandbox safety check (guard against zip bombs and zip-slip path traversal)
@@ -139,8 +141,17 @@ def scan_bytes(
     extracted_features: dict[str, Any] = {}
     try:
         pipeline = FeaturePipeline()
-        feat_res = pipeline.analyze(data, metadata={"filename": file_name})
-        extracted_features = feat_res.feature_vector
+        # Create a temporary file with the original extension so OOXML, VBA,
+        # OLE, and specialized extractors can fully inspect the container.
+        ext = Path(file_name).suffix or ".bin"
+        with tempfile.NamedTemporaryFile(suffix=ext, delete=False) as tf:
+            tf.write(data)
+            temp_path = Path(tf.name)
+        try:
+            feat_res = pipeline.analyze_file(temp_path)
+            extracted_features = feat_res.feature_vector
+        finally:
+            temp_path.unlink(missing_ok=True)
     except Exception as exc:
         logger.warning("Feature extraction failed: %s", exc)
 

@@ -117,6 +117,21 @@ class Predictor:
             "features_evaluated": len(cols),
         }
 
+    # ------------------------------------------------------------------
+    # Compatibility wrapper used by older code paths (e.g. diagnostics)
+    # ------------------------------------------------------------------
+    def predict(self, features: Mapping[str, Any], **kwargs) -> dict[str, Any]:
+        """Legacy entry point that forwards to :meth:`predict_features`.
+
+        The diagnostics utility historically called ``predictor.predict``.  The
+        new API is ``predict_features``; this thin wrapper preserves backwards
+        compatibility without altering the public contract of ``Predictor``.
+        ``**kwargs`` is accepted for forward‑compatibility but ignored because
+        the underlying implementation does not need it.
+        """
+        return self.predict_features(features, **kwargs)
+
+
 
 # Global cached predictor instance
 _PREDICTOR: Optional[Predictor] = None

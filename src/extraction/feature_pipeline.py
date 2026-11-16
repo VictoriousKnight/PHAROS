@@ -28,6 +28,8 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Callable, Mapping, MutableMapping, Optional
 import logging
+import time
+from src.config.settings import settings
 
 logger = logging.getLogger(__name__)
 from xml.etree import ElementTree as ET
@@ -708,6 +710,9 @@ class FeaturePipeline:
         metadata: Optional[Mapping[str, Any]] = None,
     ) -> FeatureAnalysis:
         """Normalize supplied analyses and return a FeatureAnalysis object."""
+        start_ts = time.time()
+        if settings.debug_ml:
+            logger.debug("FeaturePipeline.analyze start", extra={"scan_id": "N/A"})
         sz = _source_size(source)
         sh = _source_hash(source)
 
@@ -742,11 +747,30 @@ class FeaturePipeline:
         if metadata:
             final_meta.update(dict(metadata))
 
+        if settings.debug_ml:
+            # Compute fingerprint and duration for debug logging
+            end_ts = time.time()
+            duration_ms = (end_ts - start_ts) * 1000
+            # Create a deterministic fingerprint of the feature vector for diagnostics
+            fv_items = "|".join(f"{k}:{v}" for k, v in sorted(fv.items()))
+            fingerprint = hashlib.sha256(fv_items.encode("utf-8")).hexdigest()
+            logger.debug(
+                "FeaturePipeline.analyze completed",
+                extra={
+                    "scan_id": "N/A",
+                    "duration_ms": f"{duration_ms:.2f}",
+                    "feature_fingerprint": fingerprint,
+                    "nonzero_features": len([v for v in fv.values() if v != 0]),
+                },
+            )
+
         return FeatureAnalysis(
-            source=source, source_size=sz, source_hash=sh,
+            source=source,
+            source_size=sz,
+            source_hash=sh,
             analyses=normalized,
-            feature_vector=dict(sorted(fv.items())),
-            feature_names=sorted(fv),
+            feature_vector=fv,
+            feature_names=sorted(fv.keys()),
             metadata=final_meta,
         )
 

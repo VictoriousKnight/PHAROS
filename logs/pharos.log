@@ -1,0 +1,830 @@
+[2026-11-16 22:22:49] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001C3CB1C3A70>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:22:56] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:22:56] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:25:16] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:25:17] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:25:17] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:33:12] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:33:13] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:33:13] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:34:57] WARNING web.db: SQLAlchemy engine could not be created: No module named 'sqlalchemy'
+[2026-11-16 22:34:59] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:35:00] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:35:00] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:39:54] WARNING web.db: SQLAlchemy engine could not be created: name '_turso_http_url' is not defined
+[2026-11-16 22:40:47] WARNING web.db: SQLAlchemy engine could not be created: Can't load plugin: sqlalchemy.dialects:https
+[2026-11-16 22:40:47] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002137E121190>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:40:48] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:40:48] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 197, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:41:11] WARNING web.db: SQLAlchemy engine could not be created: Can't load plugin: sqlalchemy.dialects:https
+[2026-11-16 22:41:11] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000021C0EA67BF0>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:41:12] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:41:12] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:41:22] WARNING web.db: SQLAlchemy engine could not be created: Can't load plugin: sqlalchemy.dialects:https
+[2026-11-16 22:41:22] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023528931100>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:41:23] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:41:23] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:42:09] WARNING web.db: SQLAlchemy engine could not be created: No module named 'sqlalchemy'
+[2026-11-16 22:42:11] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:42:13] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:42:13] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 206, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:44:41] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:44:42] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 207, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:44:42] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 207, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:45:59] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000023ECC752660>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:46:00] ERROR __main__: Unexpected error in _check_gemini
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 207, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 100, in _check_gemini
+    _validate_gemini_model(model_id)
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 179, in _validate_gemini_model
+    return _normalize_gemini_model(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name '_normalize_gemini_model' is not defined. Did you mean: '_validate_gemini_model'?
+[2026-11-16 22:46:00] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 207, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:49:03] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001853B62EBD0>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:50:29] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000002AEBE2FA8A0>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:50:30] ERROR __main__: Unexpected error in _check_ollama
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 207, in main
+    ok = fn()
+         ^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\diagnostics.py", line 128, in _check_ollama
+    from src.ml.llm import _generate_with_ollama
+ImportError: cannot import name '_generate_with_ollama' from 'src.ml.llm' (D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py)
+[2026-11-16 22:50:53] WARNING web.db: Failed to initialize Turso database: HTTPSConnectionPool(host='pharos-db-victoriousknight.aws-ap-south-1.turso.io', port=443): Max retries exceeded with url: /v2/pipeline (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D87F88E450>: Failed to resolve 'pharos-db-victoriousknight.aws-ap-south-1.turso.io' ([Errno 11001] getaddrinfo failed)"))
+[2026-11-16 22:55:28] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:55:48] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:55:49] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.8-flash
+[2026-11-16 22:56:27] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:56:28] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.8-flash
+[2026-11-16 22:56:58] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 708, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 282, in _generate_gemini_brief
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)
+[2026-11-16 22:59:28] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 22:59:28] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 22:59:30] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:00:44] INFO web.db: Turso cloud database connected and initialized.
+[2026-11-16 23:00:45] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:00:48] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:00:52] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-11-16 23:00:52] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-11-16 23:00:52] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:00:55] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:00:55] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "[32mGET / HTTP/1.1[0m" 302 -
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "GET /login HTTP/1.1" 200 -
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "GET /static/js/theme.js HTTP/1.1" 200 -
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "GET /static/css/style.css HTTP/1.1" 200 -
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "GET /static/css/tokens.css HTTP/1.1" 200 -
+[2026-11-16 23:01:18] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:18] "GET /static/css/animation.css HTTP/1.1" 200 -
+[2026-11-16 23:01:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "GET /static/js/dashboard.js HTTP/1.1" 200 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:32] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:44] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:01:44] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:01:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:44] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:45] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:01:45] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:01:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:45] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:46] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:46] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:47] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:47] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:48] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:48] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:01:49] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:49] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:50] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:50] "GET /api/scan/pharos_45d835fa963f/status HTTP/1.1" 200 -
+[2026-11-16 23:01:51] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:51] "GET /report/pharos_45d835fa963f HTTP/1.1" 200 -
+[2026-11-16 23:01:51] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:51] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:51] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:51] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:51] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:01:51] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:01:51] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:14] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:14] "GET /history HTTP/1.1" 200 -
+[2026-11-16 23:02:14] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:14] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:14] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:14] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:14] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:14] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:14] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:17] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:17] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:22] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:02:22] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:02:22] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:02:22] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:02:23] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:23] "GET /api/scan/pharos_f43efc5dc2f2/status HTTP/1.1" 200 -
+[2026-11-16 23:02:23] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:23] "GET /api/scan/pharos_f43efc5dc2f2/status HTTP/1.1" 200 -
+[2026-11-16 23:02:24] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:24] "GET /api/scan/pharos_f43efc5dc2f2/status HTTP/1.1" 200 -
+[2026-11-16 23:02:25] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:02:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:25] "GET /api/scan/pharos_f43efc5dc2f2/status HTTP/1.1" 200 -
+[2026-11-16 23:02:26] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:26] "GET /api/scan/pharos_f43efc5dc2f2/status HTTP/1.1" 200 -
+[2026-11-16 23:02:27] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:27] "GET /report/pharos_f43efc5dc2f2 HTTP/1.1" 200 -
+[2026-11-16 23:02:27] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:27] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:27] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:27] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:27] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:27] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:27] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:31] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:34] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:02:34] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:02:34] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:02:34] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:02:35] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:35] "GET /api/scan/pharos_0e0b390ca08e/status HTTP/1.1" 200 -
+[2026-11-16 23:02:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:36] "GET /api/scan/pharos_0e0b390ca08e/status HTTP/1.1" 200 -
+[2026-11-16 23:02:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:36] "GET /api/scan/pharos_0e0b390ca08e/status HTTP/1.1" 200 -
+[2026-11-16 23:02:36] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:02:37] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:37] "GET /api/scan/pharos_0e0b390ca08e/status HTTP/1.1" 200 -
+[2026-11-16 23:02:38] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:38] "GET /api/scan/pharos_0e0b390ca08e/status HTTP/1.1" 200 -
+[2026-11-16 23:02:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:39] "GET /report/pharos_0e0b390ca08e HTTP/1.1" 200 -
+[2026-11-16 23:02:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:39] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:39] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:39] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:45] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:02:59] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:59] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:02:59] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:02:59] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:02:59] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:02:59] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:02:59] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:00] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:01] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:01] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:01] WARNING ml.llm: Gemini HTTP error: status=503 model=gemini-3.5-flash-lite
+[2026-11-16 23:03:01] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 299, in _generate_gemini_brief
+    response.raise_for_status()
+  File "D:\Projects\GitHub Directory\PHAROS\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent
+[2026-11-16 23:03:01] WARNING ml.llm: Primary Gemini model failed: HTTPError
+[2026-11-16 23:03:01] WARNING ml.llm: Gemini unavailable. Switching to local Ollama.
+[2026-11-16 23:03:01] INFO ml.llm: Executing local Ollama model: pharos-llm
+[2026-11-16 23:03:01] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:01] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:02] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:03] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:03] ERROR ml.llm: Local Ollama brief generation failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 386, in _generate_ollama_brief
+    raw_text = _run_ollama_prompt(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 363, in _run_ollama_prompt
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ollama', 'run', 'pharos-llm']' returned non-zero exit status 1.
+[2026-11-16 23:03:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:04] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:05] "GET /api/scan/pharos_16b75aa8dd28/status HTTP/1.1" 200 -
+[2026-11-16 23:03:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:06] "GET /report/pharos_16b75aa8dd28 HTTP/1.1" 200 -
+[2026-11-16 23:03:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:06] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:06] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:06] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:28] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:28] "GET /history HTTP/1.1" 200 -
+[2026-11-16 23:03:28] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:28] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:28] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:28] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:28] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:28] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:28] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:33] "GET /report/pharos_45d835fa963f HTTP/1.1" 200 -
+[2026-11-16 23:03:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:33] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:33] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:03:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:03:33] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:03] "GET /report/pharos_0e0b390ca08e HTTP/1.1" 200 -
+[2026-11-16 23:04:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:03] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:03] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:03] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:22] "GET /report/pharos_45d835fa963f HTTP/1.1" 200 -
+[2026-11-16 23:04:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:22] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:22] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:22] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:22] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:42] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:42] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:04:42] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:43] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:43] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:43] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:04:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:04:43] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:05] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:05:05] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:05:05] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:05:05] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:05:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:06] "GET /api/scan/pharos_5037ddf919a4/status HTTP/1.1" 200 -
+[2026-11-16 23:05:06] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:06] "GET /api/scan/pharos_5037ddf919a4/status HTTP/1.1" 200 -
+[2026-11-16 23:05:07] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:07] "GET /api/scan/pharos_5037ddf919a4/status HTTP/1.1" 200 -
+[2026-11-16 23:05:07] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:05:08] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:08] "GET /api/scan/pharos_5037ddf919a4/status HTTP/1.1" 200 -
+[2026-11-16 23:05:08] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:08] "GET /api/scan/pharos_5037ddf919a4/status HTTP/1.1" 200 -
+[2026-11-16 23:05:10] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:10] "GET /report/pharos_5037ddf919a4 HTTP/1.1" 200 -
+[2026-11-16 23:05:10] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:10] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:10] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:10] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:10] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:10] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:10] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:34] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:05:34] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:05:34] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:05:34] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:05:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:34] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:35] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:35] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:36] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:36] WARNING ml.llm: Gemini HTTP error: status=503 model=gemini-3.5-flash-lite
+[2026-11-16 23:05:36] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 299, in _generate_gemini_brief
+    response.raise_for_status()
+  File "D:\Projects\GitHub Directory\PHAROS\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent
+[2026-11-16 23:05:36] WARNING ml.llm: Primary Gemini model failed: HTTPError
+[2026-11-16 23:05:36] WARNING ml.llm: Gemini unavailable. Switching to local Ollama.
+[2026-11-16 23:05:36] INFO ml.llm: Executing local Ollama model: pharos-llm
+[2026-11-16 23:05:37] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:37] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:38] ERROR ml.llm: Local Ollama brief generation failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 386, in _generate_ollama_brief
+    raw_text = _run_ollama_prompt(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 363, in _run_ollama_prompt
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ollama', 'run', 'pharos-llm']' returned non-zero exit status 1.
+[2026-11-16 23:05:38] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:38] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:39] "GET /api/scan/pharos_65f170507c95/status HTTP/1.1" 200 -
+[2026-11-16 23:05:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:40] "GET /report/pharos_65f170507c95 HTTP/1.1" 200 -
+[2026-11-16 23:05:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:40] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:40] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:05:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:05:40] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:29] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:32] "GET /report/pharos_5037ddf919a4 HTTP/1.1" 200 -
+[2026-11-16 23:06:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:32] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:32] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:32] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "GET /report/pharos_16b75aa8dd28 HTTP/1.1" 200 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:06:57] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:06:57] "GET /report/pharos_45d835fa963f HTTP/1.1" 200 -
+[2026-11-16 23:07:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:19] "GET /report/pharos_16b75aa8dd28 HTTP/1.1" 200 -
+[2026-11-16 23:07:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:19] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:19] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:19] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:22] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:07:24] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:07:24] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:07:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:32] "GET /report/pharos_65f170507c95 HTTP/1.1" 200 -
+[2026-11-16 23:07:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:32] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:32] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:07:32] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:07:38] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:07:52] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:08:06] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:11:49] INFO werkzeug:  * Detected change in 'D:\\Projects\\GitHub Directory\\PHAROS\\src\\pipeline\\scanner.py', reloading
+[2026-11-16 23:11:50] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:12:01] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:01] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:10] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:12:10] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:12:16] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:16] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:16] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:16] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:16] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:16] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:31] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:31] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:31] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:31] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:31] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:31] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:12:46] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:12:46] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:14:00] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:14:00] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:14:22] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:14:22] WARNING pipeline.scanner: Feature extraction failed: name 'tempfile' is not defined
+[2026-11-16 23:14:50] INFO werkzeug:  * Detected change in 'D:\\Projects\\GitHub Directory\\PHAROS\\src\\pipeline\\scanner.py', reloading
+[2026-11-16 23:14:50] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:14:58] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:14:58] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:15:18] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:15:33] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:15:35] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:15:35] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:18:15] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:18:16] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:19:57] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-11-16 23:19:57] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-11-16 23:19:57] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:20:10] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:20:10] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "[35m[1mGET /dashboard HTTP/1.1[0m" 500 -
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "GET /dashboard?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "GET /dashboard?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png&s=053qvswfpyT1UZH45O7k HTTP/1.1" 200 -
+[2026-11-16 23:20:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:20:34] "GET /dashboard?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[2026-11-16 23:25:44] INFO werkzeug:  * Detected change in 'D:\\Projects\\GitHub Directory\\PHAROS\\web\\db.py', reloading
+[2026-11-16 23:25:44] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:25:47] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:25:47] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:25:59] INFO werkzeug:  * Detected change in 'D:\\Projects\\GitHub Directory\\PHAROS\\web\\db.py', reloading
+[2026-11-16 23:25:59] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:26:02] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:26:02] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:27:58] INFO werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2026-11-16 23:27:58] INFO werkzeug: [33mPress CTRL+C to quit[0m
+[2026-11-16 23:27:58] INFO werkzeug:  * Restarting with stat
+[2026-11-16 23:28:01] WARNING werkzeug:  * Debugger is active!
+[2026-11-16 23:28:01] INFO werkzeug:  * Debugger PIN: 806-470-806
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:02] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:32] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:28:32] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:28:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:33] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:34] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:34] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:28:34] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:28:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:34] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:35] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:35] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:36] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:37] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:37] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:37] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:28:38] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:38] "GET /api/scan/pharos_2e2074da3e08/status HTTP/1.1" 200 -
+[2026-11-16 23:28:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:39] "GET /report/pharos_2e2074da3e08 HTTP/1.1" 200 -
+[2026-11-16 23:28:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:39] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:39] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:39] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:28:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:28:55] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:00] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:29:00] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:29:01] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:29:01] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:29:01] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:01] "GET /api/scan/pharos_c533d29103d8/status HTTP/1.1" 200 -
+[2026-11-16 23:29:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:02] "GET /api/scan/pharos_c533d29103d8/status HTTP/1.1" 200 -
+[2026-11-16 23:29:02] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:02] "GET /api/scan/pharos_c533d29103d8/status HTTP/1.1" 200 -
+[2026-11-16 23:29:03] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:29:03] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:03] "GET /api/scan/pharos_c533d29103d8/status HTTP/1.1" 200 -
+[2026-11-16 23:29:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:04] "GET /api/scan/pharos_c533d29103d8/status HTTP/1.1" 200 -
+[2026-11-16 23:29:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:05] "GET /report/pharos_c533d29103d8 HTTP/1.1" 200 -
+[2026-11-16 23:29:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:05] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:05] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:05] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:05] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:30] "GET /history HTTP/1.1" 200 -
+[2026-11-16 23:29:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:30] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:30] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:30] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:29:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:29:36] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:30:38] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:38] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:30:38] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:30:38] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:30:38] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:30:38] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:38] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:39] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:40] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:40] WARNING ml.llm: Gemini HTTP error: status=503 model=gemini-3.5-flash-lite
+[2026-11-16 23:30:40] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 299, in _generate_gemini_brief
+    response.raise_for_status()
+  File "D:\Projects\GitHub Directory\PHAROS\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent
+[2026-11-16 23:30:40] WARNING ml.llm: Primary Gemini model failed: HTTPError
+[2026-11-16 23:30:40] WARNING ml.llm: Gemini unavailable. Switching to local Ollama.
+[2026-11-16 23:30:40] INFO ml.llm: Executing local Ollama model: pharos-llm
+[2026-11-16 23:30:41] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:41] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:41] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:41] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:42] ERROR ml.llm: Local Ollama brief generation failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 386, in _generate_ollama_brief
+    raw_text = _run_ollama_prompt(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 363, in _run_ollama_prompt
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ollama', 'run', 'pharos-llm']' returned non-zero exit status 1.
+[2026-11-16 23:30:42] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:42] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:43] "GET /api/scan/pharos_a59a9fa88f59/status HTTP/1.1" 200 -
+[2026-11-16 23:30:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:44] "GET /report/pharos_a59a9fa88f59 HTTP/1.1" 200 -
+[2026-11-16 23:30:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:30:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:44] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:30:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:44] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:30:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:30:44] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:09] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:09] "GET /report/pharos_2e2074da3e08 HTTP/1.1" 200 -
+[2026-11-16 23:31:09] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:09] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:09] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:09] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:09] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:09] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:09] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:12] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:12] "GET /report/pharos_c533d29103d8 HTTP/1.1" 200 -
+[2026-11-16 23:31:12] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:12] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:12] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:12] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:12] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:12] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:12] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:19] "GET /history HTTP/1.1" 200 -
+[2026-11-16 23:31:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:19] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:19] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:19] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:19] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:21] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:21] "GET /report/pharos_a59a9fa88f59 HTTP/1.1" 200 -
+[2026-11-16 23:31:21] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:21] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:21] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:21] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:21] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:21] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:21] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:25] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:25] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:29] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:29] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:31:29] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:31:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:30] "GET /api/scan/pharos_b3a12957af3e/status HTTP/1.1" 200 -
+[2026-11-16 23:31:30] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:30] "GET /api/scan/pharos_b3a12957af3e/status HTTP/1.1" 200 -
+[2026-11-16 23:31:30] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:31:30] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:31:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:31] "GET /api/scan/pharos_b3a12957af3e/status HTTP/1.1" 200 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "GET /api/scan/pharos_b3a12957af3e/status HTTP/1.1" 200 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "GET /report/pharos_a59a9fa88f59 HTTP/1.1" 200 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:32] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:32] WARNING ml.llm: Gemini HTTP error: status=503 model=gemini-3.5-flash-lite
+[2026-11-16 23:31:32] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 299, in _generate_gemini_brief
+    response.raise_for_status()
+  File "D:\Projects\GitHub Directory\PHAROS\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent
+[2026-11-16 23:31:32] WARNING ml.llm: Primary Gemini model failed: HTTPError
+[2026-11-16 23:31:32] WARNING ml.llm: Gemini unavailable. Switching to local Ollama.
+[2026-11-16 23:31:32] INFO ml.llm: Executing local Ollama model: pharos-llm
+[2026-11-16 23:31:35] ERROR ml.llm: Local Ollama brief generation failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 386, in _generate_ollama_brief
+    raw_text = _run_ollama_prompt(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 363, in _run_ollama_prompt
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ollama', 'run', 'pharos-llm']' returned non-zero exit status 1.
+[2026-11-16 23:31:39] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:39] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:31:39] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:31:40] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:40] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:40] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:31:40] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:31:41] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:41] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:41] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:41] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:42] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:42] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:43] WARNING ml.llm: Gemini HTTP error: status=503 model=gemini-3.5-flash-lite
+[2026-11-16 23:31:43] ERROR ml.llm: Gemini network/API request failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 299, in _generate_gemini_brief
+    response.raise_for_status()
+  File "D:\Projects\GitHub Directory\PHAROS\.venv\Lib\site-packages\requests\models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent
+[2026-11-16 23:31:43] WARNING ml.llm: Primary Gemini model failed: HTTPError
+[2026-11-16 23:31:43] WARNING ml.llm: Gemini unavailable. Switching to local Ollama.
+[2026-11-16 23:31:43] INFO ml.llm: Executing local Ollama model: pharos-llm
+[2026-11-16 23:31:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:43] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:43] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:43] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:44] ERROR ml.llm: Local Ollama brief generation failed
+Traceback (most recent call last):
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 386, in _generate_ollama_brief
+    raw_text = _run_ollama_prompt(prompt)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\GitHub Directory\PHAROS\src\ml\llm.py", line 363, in _run_ollama_prompt
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\ASUS\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ollama', 'run', 'pharos-llm']' returned non-zero exit status 1.
+[2026-11-16 23:31:44] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:44] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:45] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:45] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:45] "GET /api/scan/pharos_c96543343c9f/status HTTP/1.1" 200 -
+[2026-11-16 23:31:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:47] "GET /report/pharos_c96543343c9f HTTP/1.1" 200 -
+[2026-11-16 23:31:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:47] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:47] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:31:47] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:31:47] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:48] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:48] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:55] "GET /report/pharos_c96543343c9f HTTP/1.1" 200 -
+[2026-11-16 23:33:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:55] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:55] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:33:55] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:33:55] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:00] "GET /report/pharos_c533d29103d8 HTTP/1.1" 200 -
+[2026-11-16 23:34:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:00] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:00] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:00] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:00] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "GET /dashboard HTTP/1.1" 200 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "[36mGET /static/js/dashboard.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:04] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:04] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:31] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:31] "POST /api/scan HTTP/1.1" 200 -
+[2026-11-16 23:34:31] INFO pipeline.scanner: Starting scan
+[2026-11-16 23:34:31] INFO ml.llm: PHAROS LLM mode: Gemini Cloud
+[2026-11-16 23:34:31] INFO ml.llm: Generating PHAROS brief using Gemini: gemini-3.5-flash-lite
+[2026-11-16 23:34:32] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:32] "GET /api/scan/pharos_68371612fcf3/status HTTP/1.1" 200 -
+[2026-11-16 23:34:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:33] "GET /api/scan/pharos_68371612fcf3/status HTTP/1.1" 200 -
+[2026-11-16 23:34:33] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:33] "GET /api/scan/pharos_68371612fcf3/status HTTP/1.1" 200 -
+[2026-11-16 23:34:34] INFO ml.llm: Gemini brief generated successfully using gemini-3.5-flash-lite
+[2026-11-16 23:34:34] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:34] "GET /api/scan/pharos_68371612fcf3/status HTTP/1.1" 200 -
+[2026-11-16 23:34:35] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:35] "GET /api/scan/pharos_68371612fcf3/status HTTP/1.1" 200 -
+[2026-11-16 23:34:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:36] "GET /report/pharos_68371612fcf3 HTTP/1.1" 200 -
+[2026-11-16 23:34:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:36] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:36] "[36mGET /static/css/tokens.css HTTP/1.1[0m" 304 -
+[2026-11-16 23:34:36] INFO werkzeug: 127.0.0.1 - - [16/Nov/2026 23:34:36] "[36mGET /static/css/animation.css HTTP/1.1[0m" 304 -

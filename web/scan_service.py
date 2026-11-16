@@ -176,7 +176,11 @@ def submit_scan(
 def get_job_status(scan_id: str) -> dict[str, Any]:
     """Retrieve the live progress or final result of a scan job."""
     if scan_id in _JOB_STATUS:
-        return _JOB_STATUS[scan_id]
+        status = _JOB_STATUS[scan_id]
+        if status.get('status') == 'completed':
+            # Remove in‑memory entry to avoid stale data on future requests.
+            _JOB_STATUS.pop(scan_id, None)
+        return status
 
     # Check persistence DB if job has aged out of memory
     from web.db import get_scan_by_id
